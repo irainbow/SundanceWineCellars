@@ -5,7 +5,7 @@ import {HomeComponent} from './home/home.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
-  { path: 'subpage', component: SubpageComponent }
+  { path: 'subpage', component: SubpageComponent },
 ];
 
 @NgModule({
