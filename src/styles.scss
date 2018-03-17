@@ -1,1 +1,530 @@
 /* You can add global styles to this file, and also import other style files */
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+
+$mainContrast: #9D1B36;
+$secondaryContrast: #4F6133;
+$backgroundColor: #D3D1B2;
+$sunColor: rgba(255, 226, 153, 0.75);
+$contrastBkg: #EADAB7; //rgb(214, 163, 176)
+$noColorOverride: hsla(84,65%,90%, 0);
+
+$nav-color: $backgroundColor;
+
+$vine-color: #6F603E;
+//$nav-color-alt: #927e52;
+
+.displayAlt{
+  display: none;
+}
+
+// Modify Navbar Detials
+// Basics of a navbar
+//$navbar-height:                    50px !default;
+//$navbar-margin-bottom:             $line-height-computed !default;
+//$navbar-border-radius:             $border-radius-base !default;
+//$navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
+//$navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2) !default;
+//$navbar-collapse-max-height:       340px !default;
+
+$navbar-default-color:             $nav-color;
+$navbar-default-bg:                $noColorOverride;
+$navbar-default-border:            $nav-color;
+
+// Navbar links
+$navbar-default-link-color:               $nav-color;
+$navbar-default-link-hover-color:          lighten($nav-color, 10%);
+$navbar-default-link-hover-bg:             transparent !default;
+$navbar-default-link-active-color:         $nav-color;
+//$navbar-default-link-active-bg:            darken($secondaryContrast, 6.5%) !default;
+$navbar-default-link-disabled-color:       $nav-color;
+$navbar-default-link-disabled-bg:          transparent !default;
+//
+//// Navbar brand label
+//$navbar-default-brand-color:               $navbar-default-link-color !default;
+//$navbar-default-brand-hover-color:         darken($navbar-default-brand-color, 10%) !default;
+//$navbar-default-brand-hover-bg:            transparent !default;
+//
+//// Navbar toggle
+//$navbar-default-toggle-hover-bg:           #ddd !default;
+//$navbar-default-toggle-icon-bar-bg:        #888 !default;
+//$navbar-default-toggle-border-color:       #ddd !default;
+//
+//
+////=== Inverted navbar
+//// Reset inverted navbar basics
+//$navbar-inverse-color:                      lighten($gray-light, 15%) !default;
+//$navbar-inverse-bg:                         #222 !default;
+//$navbar-inverse-border:                     darken($navbar-inverse-bg, 10%) !default;
+//
+//// Inverted navbar links
+//$navbar-inverse-link-color:                 lighten($gray-light, 15%) !default;
+//$navbar-inverse-link-hover-color:           #fff !default;
+//$navbar-inverse-link-hover-bg:              transparent !default;
+//$navbar-inverse-link-active-color:          $navbar-inverse-link-hover-color !default;
+//$navbar-inverse-link-active-bg:             darken($navbar-inverse-bg, 10%) !default;
+//$navbar-inverse-link-disabled-color:        #444 !default;
+//$navbar-inverse-link-disabled-bg:           transparent !default;
+//
+//// Inverted navbar brand label
+//$navbar-inverse-brand-color:                $navbar-inverse-link-color !default;
+//$navbar-inverse-brand-hover-color:          #fff !default;
+//$navbar-inverse-brand-hover-bg:             transparent !default;
+//
+//// Inverted navbar toggle
+//$navbar-inverse-toggle-hover-bg:            #333 !default;
+//$navbar-inverse-toggle-icon-bar-bg:         #fff !default;
+//$navbar-inverse-toggle-border-color:        #333 !default;
+
+
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+// bower:scss
+//@import "../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+.main{
+  //  max-width: 970px;
+  background-color: $backgroundColor;
+  min-height: 100vh;
+  background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate.svg"), url("assets/images/OWM_sky.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: 0 0, right top, 50% 0px, 0 0;
+  background-size: 50%, 50%, 90%, 100%;
+}
+
+html { background-color: $contrastBkg;
+}
+
+//header#mainHeader{
+//  h1{
+//    font-family: nexa_rust_script_l0regular, futura, sans-serif;
+//    color: #9D1B36;
+//    font-size: 60px;
+//    margin: 25px 0 20px 12%;
+//  }
+//}
+
+
+
+body{
+  background-color: transparent;
+  color: $secondaryContrast;
+}
+
+.content{
+  //  background: url("assets/images/owm_mainbkg_isolate.svg") no-repeat 0 20px;
+  background-size: 100%;
+  background-color: rgba($backgroundColor, 0.2);
+  border-radius: 25px;
+  width: 85%;
+  margin: 0px auto
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4{
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 800;
+}
+h2{
+  font-size: 20px;
+  text-align: center;
+}
+
+.header{
+  height: 155px;
+  padding-bottom: 10px;
+  margin: 20px 0 0px 170px;
+  h1{
+    font-family: nexa_rust_script_l0regular, futura, sans-serif;
+    color: $mainContrast;
+    font-size: 60px;
+    margin: 0 0 0 0;
+    padding: 0;
+  }
+  h3{
+    font-family: nexa_rust_script_l0regular, futura, sans-serif;
+    color: $mainContrast;
+    font-size: 20px;
+    line-height: 75px;
+    margin: 0 5px 0 0;
+    padding: 0;
+  }
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.inlineElements{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  .inlineElement{
+    margin-left: 10px;
+    &:first-of-type{
+      margin-left: 0px;
+    }
+    img.logo{
+      padding: 5px 0px;
+    }
+  }
+}
+
+
+//NAVIGATION
+.navbar-collapse{
+  padding: 0;
+}
+
+.test{
+  width: 80%;
+  margin: 0 auto;
+}
+ul.myNav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: flex-end;
+  //  margin-right: 150px;
+  li{
+    a{
+
+      text-align: center;
+      padding: 10px;
+      //      margin: 0 auto;
+      //      width: 100%;
+    }
+  }
+}
+
+.allNav{
+  background-color: $secondaryContrast;
+  //  border-bottom: solid 6px $vine-color;
+  font-family: nexa_rust_sansblack;
+}
+
+.footer{
+  padding: 10px 0px;
+  .fontOverride{
+    font-family: verdana, sans-serif;
+  }
+  background-color: $secondaryContrast;
+  color: $contrastBkg;
+  position: fixed;
+  bottom: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: flex-end;
+  font-family: nexa_rust_script_l0regular, script;
+  font-size: 14pt;
+  .foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .footer-info{
+      margin-left: 10px;
+    }
+  }
+}
+
+//SHOP Specific
+
+#shopQueries{
+  color: $mainContrast;
+  font-size: 18px;
+  .specialFont{
+    font-family: nexa_rust_script_l0regular;
+  }
+  .searchItem{
+    //    width: 200px;
+    display: inline-block;
+  }
+  img{
+    padding: 5px 10px;
+  }
+  input{
+    padding: 0 5px;
+    width: 80%;
+  }
+  .price input{
+    width: 50px;
+    margin: 0 5px;
+  }
+}
+
+.shopItem{
+  padding: 20px 20px 20px 0;
+  .sale{
+    .regPrice{
+      text-decoration: line-through;
+      color: red;
+    }
+  }
+  .nonTextItemAttributes{
+    height: 100%;
+    div{
+      display: block;
+    }
+  }
+  button{
+    margin: 0 15px 15px 0
+  }
+  h1,h2,h3,h4{
+    padding: 0;
+    margin: 0;
+  }
+  img{
+    padding: 0 15px 15px 0
+  }
+  h3{
+    font-size: 20px;
+  }
+  .infoItem{
+    display: block;
+    padding-bottom: 5px;
+  }
+}
+
+
+//Placeholders
+
+::-webkit-input-placeholder {
+  color: rgba( $mainContrast, .6 );
+  font-family: nexa_rust_script_l0regular;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: rgba( $mainContrast, .6);
+  font-family: nexa_rust_script_l0regular;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: rgba( $mainContrast, .6);
+  font-family: nexa_rust_script_l0regular;
+}
+
+:-ms-input-placeholder {
+  color: rgba( $mainContrast, .6);
+  font-family: nexa_rust_script_l0regular;
+}
+
+
+//Size Adjustment Queries
+@media screen and (max-width: 1199px) {
+  .header{
+    margin: 10px 0 10px 140px;
+    height: 130px;
+    h1{
+      font-size: 45px;
+      margin: 0 5px 0 0;
+
+    }
+    h3{
+      font-size: 15px;
+      line-height: 55px;
+      margin: 0 5px 0 0;
+
+    }
+    img{
+      height: 40px;
+    }
+  }
+}
+@media screen and (max-width: 991px) {
+  .header{
+    margin: 10px 0 10px 115px;
+    height: 100px;
+    h1{
+      padding-top: 5px;
+      font-size: 35px;
+    }
+    h3{
+      font-size: 20px;
+      line-height: 50px;
+    }
+  }
+
+  .inlineElements{
+
+    .inlineElement{
+
+    }
+    img.logo{
+      padding: 5px 0px;
+      height: 35px;
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .flexContainer {
+    display: block;
+    //    flex-direction: row;
+    //    justify-content: space-between;
+    //    align-items: flex-end;
+  }
+  .header{
+    margin: 10px;
+    height: 100px;
+    h1{
+      font-size: 45px;
+      line-height: 45px;
+      text-align: center;
+    }
+  }
+
+  .inlineElements{
+    display: block;
+    .displayAlt{
+      display: block;
+      text-align: center;
+      font-family: nexa_rust_script_l0regular, times, sans-serif;
+      color: $secondaryContrast;
+      font-size: 18px;
+    }
+    .inlineElement{
+    }
+    img.logo{
+      display: none;
+      margin-left: 50px;
+      padding: 5px 0px;
+      height: 40px;
+    }
+  }
+  .footer{
+    display: inline;
+  }
+}
+@media screen and (max-width: 640px) {
+
+
+  .header{
+    margin: 10px 0 10px 10px;
+    text-align: center;
+    h1{
+      font-size: 40px;
+      line-height: 40px;
+      text-align: center;
+    }
+  }
+
+  .inlineElements{
+    .displayAlt{
+      font-size: 16px;
+    }
+    .inlineElement{
+    }
+
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .main{
+    //  max-width: 970px;
+    background-color: $backgroundColor;
+    min-height: 100vh;
+    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_sm.svg"), url("assets/images/OWM_sky_sm.svg");
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: 0 0, right top, 50% 0px, 0 0;
+    background-size: 30%, 30%, 90%, 100%;
+  }
+
+  .header{
+    text-align: center;
+    //    height: 180px;
+    width: 80%;
+    margin: 10px auto;
+    h1{
+
+      font-size: 35px;
+      text-align: center;
+    }
+  }
+
+  .inlineElements{
+    .displayAlt{
+      font-size: 16px;
+    }
+    .inlineElement{
+    }
+
+  }
+}
+@media screen and (max-width: 460px) {
+  .flexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .main{
+    .header{
+      text-align: center;
+      height: 150px;
+      width: 70%;
+      margin: 10px auto;
+      h1{
+
+        font-size: 40px;
+        text-align: center;
+      }
+    }
+
+    //  max-width: 970px;
+    background-color: $backgroundColor;
+    min-height: 100vh;
+    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_sm2.svg"), url("assets/images/OWM_sky_sm2.svg");
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: 0 0, right top, 50% 0px, 0 0;
+    background-size: 30%, 30%, 90%, 100%;
+  }
+
+}
+
+@media screen and (max-width: 380px) {
+  .main{
+    .header{
+      text-align: center;
+      height: auto;
+      padding-bottom: 0;
+      width: 80%;
+      margin: 10px auto;
+      h1{
+
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+      }
+    }
+
+    //  max-width: 970px;
+    background-color: $backgroundColor;
+    min-height: 100vh;
+    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0 0, right top;
+    background-size: 30%, 30%;
+  }
+}

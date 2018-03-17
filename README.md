@@ -1,4 +1,13 @@
-# SundanceWine
+# Sundance Wine Cellars
+
+## Creating Components
+
+Use `ng generate component --routing --module=app --spec=false componentName`
+
+Then edit `app-routing.module.ts` to include a route to the new component
+
+
+# Original Angular Readme
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
