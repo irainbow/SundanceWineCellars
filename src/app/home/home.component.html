@@ -21,9 +21,25 @@
       </p>
     </div>
 
-    <div class="row">
+    <form class="row"
+          (submit)="searchWines(searchField.value)"
+          action="javascript: void(0)"
+    >
       Search our Wines:
-      <input type="text" name="query" />
+      <input type="text"
+             #searchField
+      />
+      <button>Search</button>
+    </form>
+
+    <div *ngIf="wineResults">
+      <div *ngIf="wineResults.length == 0">
+        No results found for your query
+      </div>
+
+      <div *ngFor="let wine of wineResults">
+        {{ wine.name }}
+      </div>
     </div>
 
     <div>
