@@ -88,9 +88,7 @@ $navbar-default-link-disabled-bg:          transparent !default;
   padding: 0.2em 0;
 }
 
-// bower:scss
-//@import "../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
-// endbower
+@import "../node_modules/bootstrap/scss/bootstrap";
 
 .main{
   //  max-width: 970px;
