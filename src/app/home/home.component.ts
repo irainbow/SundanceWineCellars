@@ -18,8 +18,8 @@ export class HomeComponent implements OnInit {
     query = query.toLowerCase().trim();
 
     if (query.length > 0) {
-      this.wineResults = this.wineManager.wines.filter(
-        wine => wine.name.toLowerCase().includes(query)
+      this.wineResults = this.wineManager.wineries.filter(
+        winery => winery.wineryName.toLowerCase().includes(query)
       );
     } else {
       this.wineResults = [];
