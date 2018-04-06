@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {WineInfo, WineManagerService} from '../wine-manager.service';
+import {WineManagerService, Wineries} from '../wine-manager.service';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +9,7 @@ import {WineInfo, WineManagerService} from '../wine-manager.service';
 export class HomeComponent implements OnInit {
   title = 'Sundance Wine Cellars';
 
-  wineResults: WineInfo[] | null = null;
+  wineResults: Wineries[] | null = null;
 
   constructor(public wineManager: WineManagerService) {
   }
