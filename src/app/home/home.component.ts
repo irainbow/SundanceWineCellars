@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {WineManagerService, Wineries} from '../wine-manager.service';
+import {WineManagerService, WineryInfo} from '../wine-manager.service';
 
 @Component({
   selector: 'app-home',
@@ -9,21 +9,18 @@ import {WineManagerService, Wineries} from '../wine-manager.service';
 export class HomeComponent implements OnInit {
   title = 'Sundance Wine Cellars';
 
-  wineResults: Wineries[] | null = null;
+  wineResults: WineryInfo[] | null = null;
 
   constructor(public wineManager: WineManagerService) {
+    this.searchWines('');
   }
 
   searchWines(query: string) {
     query = query.toLowerCase().trim();
 
-    if (query.length > 0) {
-      this.wineResults = this.wineManager.wineries.filter(
-        winery => winery.wineryName.toLowerCase().includes(query)
-      );
-    } else {
-      this.wineResults = [];
-    }
+    this.wineResults = this.wineManager.wineries
+      .filter(winery => winery.wineryName.toLowerCase().includes(query))
+      .slice(0, 20);
   }
 
   ngOnInit() {

@@ -22,14 +22,14 @@
     </div>
 
     <form class="row"
-          (submit)="searchWines(searchField.value)"
           action="javascript: void(0)"
     >
       Search our Wines:
       <input type="text"
              #searchField
+             (keyup)="searchWines(searchField.value)"
+             (change)="searchWines(searchField.value)"
       />
-      <button>Search</button>
     </form>
 
     <div *ngIf="wineResults">
