@@ -2,47 +2,47 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class WineManagerService {
-  get wines() { return wines; }
-  get categories() { return categories; }
-  get categoryTypes() { return categoryTypes; }
+  // get wines() { return wines; }
+  // get categories() { return categories; }
+  // get categoryTypes() { return categoryTypes; }
   get wineries() { return wineries; }
 
   constructor() { }
 }
 
-const wines: WineInfo[] = [
-  {
-    name: 'Something Dark',
-    description: 'Dark thing is dark',
-    categoryIds: [ 'pinot-noir', 'red' ],
-  },
-];
+// const wines: WineInfo[] = [
+//   {
+//     name: 'Something Dark',
+//     description: 'Dark thing is dark',
+//     categoryIds: [ 'pinot-noir', 'red' ],
+//   },
+// ];
 
-const categories: WineCategory[] = [
-  {
-    id: 'red',
-    typeId: 'color',
-    name: 'Reds',
-  },
-  {
-    id: 'white',
-    typeId: 'color',
-    name: 'Whites',
-  },
-
-  {
-    id: 'pinot-noir',
-    typeId: 'category-type',
-    name: 'Pinot Noir',
-  },
-];
-
-const categoryTypes: WineCategoryType[] = [
-  {
-    typeId: 'pinot-noir',
-    name: 'Some Type Category',
-  },
-];
+// const categories: WineCategory[] = [
+//   {
+//     id: 'red',
+//     typeId: 'color',
+//     name: 'Reds',
+//   },
+//   {
+//     id: 'white',
+//     typeId: 'color',
+//     name: 'Whites',
+//   },
+//
+//   {
+//     id: 'pinot-noir',
+//     typeId: 'category-type',
+//     name: 'Pinot Noir',
+//   },
+// ];
+//
+// const categoryTypes: WineCategoryType[] = [
+//   {
+//     typeId: 'pinot-noir',
+//     name: 'Some Type Category',
+//   },
+// ];
 
 const wineries: Wineries[] = [
   {
@@ -679,25 +679,25 @@ wineryName: 'Winter\'s Hill'
   }
 ];
 
-export interface WineInfo {
-  name: string;
-  description: string;
-  price: number;
-  categoryIds: string[];
-}
+// export interface WineInfo {
+//   name: string;
+//   description: string;
+//   price: number;
+//   categoryIds: string[];
+// }
 
-export interface WineCategory {
-  id: string;
-  typeId: string;
-  name: string;
-}
-
-export interface WineCategoryType {
-  typeId: string;
-  name: string;
-}
+// export interface WineCategory {x
+//   id: string;
+//   typeId: string;
+//   name: string;
+// }
+//
+// export interface WineCategoryType {
+//   typeId: string;
+//   name: string;
+// }
 
 export interface Wineries {
   wineryPopularity:  0,
-wineryName: string;
+  wineryName: string;
 }
