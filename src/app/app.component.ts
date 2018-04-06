@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+// import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 
+// @module({
+//   declarations: [AppComponent,],
+//   imports: [NgbModule,]
+// })
+
 export class AppComponent {
+  public isNavbarCollapsed = true;
 }
