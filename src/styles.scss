@@ -175,7 +175,7 @@ h2{
 //NAVIGATION
 .tag-line{
   a{
-    font-family: 'Norican', cursive;
+    font-family: 'lithos-pro', 'SteinAntik', 'Rokkitt', serif;
     font-size: 18pt;
     color: $lighterContrastBkg;
   }
@@ -202,36 +202,85 @@ a.navbar-brand{
     color: $lighterContrastBkg;
 }
 
-//ul.myNav{
-//  display: flex;
-//  flex-direction: row;
-//  justify-content: space-between;
-//  width: 100%;
-//  align-items: flex-end;
-//  //  margin-right: 150px;
-//  li{
-//    a{
+//Site Specific Menu area Styles
+
+ul.myNav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  align-items: flex-end;
+  //  margin-right: 150px;
+  li{
+    a{
+
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-right: 10px;
+      padding-left: 10px;
+      color: $contrastBkg;
+      //      margin: 0 auto;
+      //      width: 100%;
+      .navbar-nav .my-nav-link{
+        padding-right: 10px;
+        padding-left: 10px;
+      }
+    }
+  }
+
+}
+//Override Bootstrap issues
+
+
+.navbar-nav .my-nav-link{
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+//Style Collapsed Menu differently
+
+//.navbar-collapse.collapse.show ul.myNav{
+//    display: flex;
+//    flex-direction: column;
+//    justify-content: center;
+//    width: 100%;
+//    align-items: center;
+//    margin: -2.5em 0 0 0;
+//    //  margin-right: 150px;
+//    li{
+//      a{
 //
-//      text-align: center;
-//      padding: 10px;
-//      color: $contrastBkg;
-//      //      margin: 0 auto;
-//      //      width: 100%;
+//        text-align: center;
+//        padding-top: 10px;
+//        padding-bottom: 10px;
+//        padding-right: 10px;
+//        padding-left: 10px;
+//        color: $contrastBkg;
+//        //      margin: 0 auto;
+//        //      width: 100%;
+//        .navbar-nav .my-nav-link{
+//          padding-right: 10px;
+//          padding-left: 10px;
+//        }
+//      }
 //    }
-//  }
+//
 //}
+
 
 .allNav{
   background-color: $secondaryContrast;
   //  border-bottom: solid 6px $vine-color;
-  font-family: nexa_rust_sansblack;
+  font-family: 'lithos-pro', 'SteinAntik', 'Rokkitt', serif;
 }
 
 .footer{
-  padding: 10px 0px;
   .fontOverride{
     font-family: verdana, sans-serif;
   }
+
+  padding: 10px 0px;
   background-color: $secondaryContrast;
   color: $contrastBkg;
   position: fixed;
@@ -242,7 +291,7 @@ a.navbar-brand{
   justify-content: space-between;
   width: 100%;
   align-items: flex-end;
-  font-family: 'SteinAntik', 'Rokkitt', serif;
+  font-family: 'lithos-pro', 'SteinAntik', 'Rokkitt', serif;
   text-transform: uppercase;
   font-size: 13pt;
   .foot{
@@ -407,6 +456,7 @@ a.navbar-brand{
   }
   .navbar div.tag-line a{
     font-size: 14pt;
+    font-family: 'lithos-pro', 'SteinAntik', 'Rokkitt', serif;
   }
   .flexContainer {
     display: block;
@@ -429,7 +479,7 @@ a.navbar-brand{
     .displayAlt{
       display: block;
       text-align: center;
-      font-family: 'SteinAntik', 'Rokkitt', serif;
+      font-family: 'lithos-pro', 'SteinAntik', 'Rokkitt', serif;
       font-weight: bold;
       //font-family: 'Norican', cursive;
       color: $secondaryContrast;
