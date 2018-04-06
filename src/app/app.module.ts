@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 import { AppComponent } from './app.component';
@@ -13,6 +14,7 @@ import { SundanceWineCellarsComponent } from './sundance-wine-cellars/sundance-w
 
 @NgModule({
   declarations: [
+    // NgbModule,
     AppComponent,
     SubpageComponent,
     HomeComponent,
@@ -20,6 +22,7 @@ import { SundanceWineCellarsComponent } from './sundance-wine-cellars/sundance-w
     SundanceWineCellarsComponent
   ],
   imports: [
+    NgbModule.forRoot(),
     BrowserModule,
     AppRoutingModule
   ],
