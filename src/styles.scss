@@ -35,6 +35,9 @@ $sunColor: rgba(255, 226, 153, 0.75);
 $contrastBkg: #EADAB7; //rgb(214, 163, 176)
 $lighterContrastBkg: #fff2d9; //rgb(214, 163, 176)
 $noColorOverride: hsla(84,65%,90%, 0);
+$wineColorLight: #B58B90;
+$wineColorLighter: rgba(112, 0, 45, 0.34);
+$wineColorDark: #701D3C;
 
 $nav-color: $backgroundColor;
 
@@ -102,7 +105,7 @@ body{
   background-color: rgba($backgroundColor, 0.2);
   border-radius: 25px;
   width: 85%;
-  margin: 0px auto
+  margin: 0px auto;
 }
 
 a:hover, a:focus {
@@ -362,6 +365,39 @@ ul.myNav{
     padding-bottom: 5px;
   }
 }
+//Wineries Styling
+ul.wineries{
+  img{
+    height: 40px;
+  }
+  display: grid;
+  margin: 10px 10px 100px 0;
+  padding: 0;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-template-rows: auto;
+  list-style-type: none;
+  align-items: center;
+  justify-items: center;
+  li.winery{
+    //border: solid $wineColorLighter;
+    font-family: 'lithos-pro', 'SteinAntik', 'Rokkitt', serif;
+    font-size: 12px;
+    min-height: 75px;
+    vertical-align: center;
+    margin: 5px;
+    //display: flex;
+    text-align: center;
+    border-radius: 20px;
+    //width: 200px;
+    //align-content: space-between;
+    //align-items: center;
+    //flex-direction: row;
+    padding: 5px;
+  }
+}
+
+
 
 
 //Placeholders
@@ -500,6 +536,7 @@ ul.myNav{
   }
   .footer{
     display: inline;
+    padding-top: 10px;
   }
 }
 @media screen and (max-width: 768px) {
