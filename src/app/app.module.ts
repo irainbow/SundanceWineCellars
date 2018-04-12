@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { WineManagerService } from './wine-manager.service';
 import { ShippingComponent } from './shipping/shipping.component';
 import { SundanceWineCellarsComponent } from './sundance-wine-cellars/sundance-wine-cellars.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { SundanceWineCellarsComponent } from './sundance-wine-cellars/sundance-w
     SubpageComponent,
     HomeComponent,
     ShippingComponent,
-    SundanceWineCellarsComponent
+    SundanceWineCellarsComponent,
+    ContactComponent
   ],
   imports: [
     NgbModule.forRoot(),
