@@ -99,6 +99,13 @@ body{
   color: $secondaryContrast;
 }
 
+a{
+  background-color: transparent;
+  color: $secondaryContrast;
+}
+a:hover{
+  color: $wineColorDark;
+}
 .content{
   //  background: url("assets/images/owm_mainbkg_isolate.svg") no-repeat 0 20px;
   background-size: 100%;
@@ -389,7 +396,7 @@ ul.wineries{
     //display: flex;
     text-align: center;
     border-radius: 20px;
-    //width: 200px;
+    //max-width: 200px;
     //align-content: space-between;
     //align-items: center;
     //flex-direction: row;
