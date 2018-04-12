@@ -3,7 +3,7 @@
     <!--Welcome to {{ title }}!-->
   <!--</h1>-->
   <div class="content">
-    <div class="row">
+    <div>
       <h2>Search Our Wines</h2>
       <p>
         Specializing in Oregon Pinot Noir, Oregon Wine Merchants carries a wide variety of Oregon and Northwest wines.
@@ -21,7 +21,7 @@
       </p>
     </div>
 
-    <form class="row"
+    <form
           action="javascript: void(0)"
     >
       Search our Wines:
@@ -37,9 +37,14 @@
         No results found for your query
       </div>
 
-      <div *ngFor="let winery of wineResults">
-        {{ winery.wineryName }}
-      </div>
+      <ul class="wineries">
+        <li class="winery" *ngFor="let winery of wineResults">
+          <a class="unstyled_link" routerLink="/shipping">
+            <img src="assets/images/grape_icon.svg" alt="grapes">
+            {{ winery.wineryName }}
+          </a>
+        </li>
+      </ul>
     </div>
 
     <div>

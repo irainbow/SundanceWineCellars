@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
 
     this.wineResults = this.wineManager.wineries
       .filter(winery => winery.wineryName.toLowerCase().includes(query))
-      .slice(0, 20);
+      .slice(0, 21);
   }
 
   ngOnInit() {
