@@ -92,7 +92,23 @@ html { background-color: $contrastBkg;
 //  }
 //}
 
+.emphasized_statement{
+  color: $mainContrast;
+}
+.header_paragraph{
+  font-weight: bold;
+  text-align: center;
+}
+.sub-paragraph{
+  padding-left: 20px;
+}
 
+div.shop{
+  //background-image: url("assets/images/wine_shop-4.png");
+  //background-size: 100%;
+  //background-repeat: no-repeat;
+  //height: 500px;
+}
 
 body{
   background-color: transparent;
@@ -127,8 +143,15 @@ h1{
 h2, h3, h4{
   font-family: 'Alegreya Sans', sans-serif;
   font-weight: 800;
+  text-align: center;
 }
 h2{
+  //font-family: 'Norican', cursive;
+  //font-size: 35px;
+  font-size: 30px;
+  text-align: center;
+}
+h3{
   font-size: 20px;
   text-align: center;
 }
