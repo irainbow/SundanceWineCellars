@@ -2,7 +2,7 @@
   <!--<h1>-->
     <!--Welcome to {{ title }}!-->
   <!--</h1>-->
-  <div class="content">
+  <div>
     <div>
       &nbsp;<br>&nbsp;<br>
       <h2>
@@ -26,26 +26,25 @@
         We offer a wide selection of rare and hard to find wines from all over the world.
         While our focus is primarily on locally produced wines from here in the Willamette Valley,
         we also offer a diverse selection of wines from all of the other major wine producing regions
-        in the world. Give us a <a href="tel:+15416879463">call at 541.687.9463,</a> as there is a good chance we
+        in the world. Give us a call at <a class="emphasized_statement" href="tel:+15416879463">541-687-9463</a>, as there is a good chance we
         might have it.
       </p>
     </div>
-
-    <form
-          action="javascript: void(0)"
-    >
-      <h2>Search Our Wineries</h2>
-      <p>
-        We have access to wines from over 660 Northwest wineries. Use the query box below to see if we can get the wine
-        you want from one of our northwest winery partners. Type the first few letters of the winery name:
-      </p>
-      Search our Wineries:
-      <input type="text"
-             #searchField
-             (keyup)="searchWines(searchField.value)"
-             (change)="searchWines(searchField.value)"
-      />
-    </form>
+    <!--<form-->
+          <!--action="javascript: void(0)"-->
+    <!--&gt;-->
+      <!--<h2>Search Our Wineries</h2>-->
+      <!--<p>-->
+        <!--We have access to wines from over 660 Northwest wineries. Use the query box below to see if we can get the wine-->
+        <!--you want from one of our northwest winery partners. Type the first few letters of the winery name:-->
+      <!--</p>-->
+      <!--Search our Wineries:-->
+      <!--<input type="text"-->
+             <!--#searchField-->
+             <!--(keyup)="searchWines(searchField.value)"-->
+             <!--(change)="searchWines(searchField.value)"-->
+      <!--/>-->
+    <!--</form>-->
 
     <div *ngIf="wineResults">
       <div *ngIf="wineResults.length == 0">
@@ -60,12 +59,6 @@
           </a>
         </li>
       </ul>
-    </div>
-
-    <div>
-      <a routerLink="/subpage">
-        Here is a thing:
-      </a>
     </div>
   </div>
 </div>

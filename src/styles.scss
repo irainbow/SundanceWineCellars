@@ -127,10 +127,13 @@ a:hover{
   background-size: 100%;
   background-color: rgba($backgroundColor, 0.2);
   border-radius: 25px;
-  width: 85%;
+  width: 80%;
   margin: 0px auto;
   padding-bottom: 120px;
 }
+//internal_content{
+//  width: 85%;
+//}
 
 a:hover, a:focus {
   text-decoration: none;
@@ -402,7 +405,7 @@ ul.wineries{
     height: 40px;
   }
   display: grid;
-  margin: 10px 10px 100px 0;
+  margin: 10px 10px 10px 0;
   padding: 0;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 10px;
