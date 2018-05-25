@@ -9,6 +9,7 @@ import {ContactComponent} from './contact/contact.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
+  { path: 'home', component: HomeComponent},
   { path: 'subpage', component: SubpageComponent },
   { path: 'shipping', component: ShippingComponent },
   { path: 'sundance_wine_cellars', component: SundanceWineCellarsComponent },
@@ -20,4 +21,11 @@ const routes: Routes = [
   exports: [ RouterModule ],
   imports: [ RouterModule.forRoot(routes) ],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule {
+  // constructor(private router: Router) {
+  // }
+  //
+  // public isRouteActive(route) {
+  //   return this.router.isRouteActive(this.router.generate(route))
+  // }
+}

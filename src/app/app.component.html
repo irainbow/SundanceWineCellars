@@ -18,17 +18,17 @@
              [class.collapse]="isNavbarCollapsed"
         >
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" routerLink="/">Home <span class="sr-only">(current)</span></a>
+            <li  class="nav-item" >
+              <a class="nav-link" [routerLinkActiveOptions]="{exact: true}" [routerLinkActive]="['active']" routerLink="/">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" routerLink="/sundance_wine_cellars">Wine Shop</a>
+              <a class="nav-link" [routerLinkActive]="['active']" routerLink="/sundance_wine_cellars">Wine Shop</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" routerLink="/shipping">Shipping</a>
+              <a class="nav-link" [routerLinkActive]="['active']" routerLink="/shipping">Shipping</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" routerLink="/contact">Contact</a>
+              <a class="nav-link" [routerLinkActive]="['active']" routerLink="/contact">Contact</a>
             </li>
           </ul>
           <div class="tag-line form-inline my-2 my-lg-0">
