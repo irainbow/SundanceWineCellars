@@ -91,6 +91,17 @@ html { background-color: $contrastBkg;
 //    margin: 25px 0 20px 12%;
 //  }
 //}
+.left_image{
+  max-width: 300px;
+  padding: 20px;
+  float: left;
+}
+
+.right_image{
+  max-width: 300px;
+  padding: 20px;
+  float: right;
+}
 
 hr.glyph {
   overflow: visible; /* For IE */
@@ -427,13 +438,13 @@ ul.myNav{
 //Wineries Styling
 ul.wineries{
   img{
-    height: 40px;
+    height: 30px;
   }
   display: grid;
-  margin: 10px 10px 10px 0;
+  margin: 5px 5px 5px 0;
   padding: 0;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 10px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 5px;
   grid-template-rows: auto;
   list-style-type: none;
   align-items: center;
@@ -442,17 +453,18 @@ ul.wineries{
     //border: solid $wineColorLighter;
     font-family: 'lithos-pro', 'SteinAntik', 'Rokkitt', serif;
     font-size: 12px;
-    min-height: 75px;
+    min-height: 55px;
     vertical-align: center;
     margin: 5px;
     //display: flex;
     text-align: center;
+    text-indent: -30px;
     border-radius: 20px;
     //max-width: 200px;
     //align-content: space-between;
     //align-items: center;
     //flex-direction: row;
-    padding: 5px;
+    padding: 5px 5px 5px 30px;
   }
 }
 
@@ -513,6 +525,9 @@ ul.wineries{
   .main{
     max-width: 925px;
     background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs.svg"), url("assets/images/OWM_sky.svg");
+  }
+  ul.wineries {
+    grid-template-columns: repeat(4, 1fr);
   }
   .header{
     margin: 10px 0 10px 170px;
@@ -616,6 +631,9 @@ ul.wineries{
       text-align: center;
     }
   }
+  ul.wineries {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
   .inlineElements{
 
@@ -696,6 +714,9 @@ ul.wineries{
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+  }
+  ul.wineries {
+    grid-template-columns: repeat(2, 1fr);
   }
   .main{
     .header{
