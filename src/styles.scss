@@ -768,5 +768,36 @@ ul.wineries{
     background-position: 0 0, right top;
     background-size: 55%, 55%;
   }
+  .footer {
+    //display: inline;
+    position: relative;
+    padding-top: 0px;
+    font-size: 12px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    .footer-info{
+      display: none;
+    }
+    .footer-phone{
+      display: none;
+    }
+    .foot .alt-footer-info{
+      display: inline;
+      a{
+        color: $contrastBkg;
+      }
+    }
+    .footer-icons{
+      img{
+        height: 25px;
+      }
+    }
+  }
+  .content{
+    padding-bottom: 55px;
+  }
 
 }
