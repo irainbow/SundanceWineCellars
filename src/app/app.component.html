@@ -3,7 +3,7 @@
   <div class="foo">
     <div class="container">
       <nav class="navbar navbar-dark bg-inverse navbar-expand-md">
-        <a class="navbar-brand" href="#">OWM</a>
+        <!--<a class="navbar-brand" href="#">OWM</a>-->
         <button class="navbar-toggler"
                 type="button"
                 aria-controls="navbarSupportedContent"
@@ -19,10 +19,10 @@
         >
           <ul class="navbar-nav mr-auto">
             <li  class="nav-item" >
-              <a class="nav-link" [routerLinkActiveOptions]="{exact: true}" [routerLinkActive]="['active']" routerLink="/">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" [routerLinkActiveOptions]="{exact: true}" [routerLinkActive]="['active']" routerLink="/">OWM <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" [routerLinkActive]="['active']" routerLink="/sundance_wine_cellars">Wine Shop</a>
+              <a class="nav-link" [routerLinkActive]="['active']" routerLink="/sundance_wine_cellars">Sundance Wine</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" [routerLinkActive]="['active']" routerLink="/shipping">Shipping</a>
@@ -51,24 +51,30 @@
       <!--<div class="row">-->
       <div class="inlineElements">
         <div class="inlineElement">
-          <a href="/#">
-            <h1>Oregon Wine Merchants</h1>
-          </a>
-        </div>
-        <div class="inlineElement">
-          <h3 class="header-conjunction">
-            by
-          </h3>
-        </div>
-        <div class="inlineElement">
           <img class="logo"
                src="assets/images/sundance_wine_cellars.svg"
                alt="Sundance Wine Cellars"
           />
         </div>
+        <div class="inlineElement">
+          <a href="/#">
+            <h1>Oregon Wine Merchants</h1>
+          </a>
+        </div>
+        <!--<div class="inlineElement">-->
+          <!--<h3 class="header-conjunction">-->
+            <!--by-->
+          <!--</h3>-->
+        <!--</div>-->
+
 
         <!--<div class="inlineElement" id="est"><a href="#/"><h3>EST 1983</h3></a></div>-->
-        <div class="inlineElement displayAlt">By Sundance Wine Cellars</div>
+        <div class="inlineElement displayAlt">
+          <img class="logoAlt"
+             src="assets/images/sundance_wine_cellars.svg"
+             alt="Sundance Wine Cellars"
+          />
+        </div>
       </div>
     </div>
   </div>

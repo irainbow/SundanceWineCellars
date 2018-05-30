@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
     query = query.toLowerCase().trim();
 
     this.wineResults = this.wineManager.wineries
-      .filter(winery => winery.wineryName.toLowerCase().includes(query))
+      .filter(winery => winery.wineryName.toLowerCase().includes(query));
       // .slice(0, 21);
   }
 

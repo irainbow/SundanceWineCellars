@@ -194,12 +194,15 @@ h3{
 
 .header{
   height: 200px;
-  padding: 10px 0px;
-  margin: 20px 0 0px 205px;
+  padding: 0;
+  //margin: 20px 0 0px 205px;
+  margin: 20px 0 0 10px;
+
   h1{
     //font-family: nexa_rust_script_l0regular, futura, sans-serif;
     color: $mainContrast;
-    font-size: 60px;
+    font-size: 50px;
+    line-height: 1.5em;
     margin: 0 0 0 0;
     padding: 0;
   }
@@ -216,15 +219,15 @@ h3{
 .flexContainer {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
 }
 
 .inlineElements{
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   .inlineElement{
     margin-left: 10px;
     &:first-of-type{
@@ -236,7 +239,7 @@ h3{
     }
     img.logo{
       padding: 15px 0px;
-      height: 72px;
+      height: 75px;
     }
   }
 }
@@ -438,28 +441,26 @@ ul.myNav{
 //Wineries Styling
 ul.wineries{
   img{
+    display: none;
     height: 30px;
   }
   display: grid;
-  margin: 5px 5px 5px 0;
+  //margin: 5px 5px 5px 0;
   padding: 0;
   grid-template-columns: repeat(5, 1fr);
   grid-column-gap: 5px;
   grid-template-rows: auto;
   list-style-type: none;
   align-items: center;
-  justify-items: center;
+  justify-items: left;
   li.winery{
     //border: solid $wineColorLighter;
-    font-family: 'lithos-pro', 'SteinAntik', 'Rokkitt', serif;
+    //font-family: 'lithos-pro', 'SteinAntik', 'Rokkitt', serif;
     font-size: 12px;
-    min-height: 55px;
     vertical-align: center;
-    margin: 5px;
+    //margin: 5px;
     //display: flex;
-    text-align: center;
-    text-indent: -30px;
-    border-radius: 20px;
+    text-align: left;
     //max-width: 200px;
     //align-content: space-between;
     //align-items: center;
@@ -467,6 +468,38 @@ ul.wineries{
     padding: 5px 5px 5px 30px;
   }
 }
+
+//ul.wineries{
+//  img{
+//    height: 30px;
+//  }
+//  display: grid;
+//  margin: 5px 5px 5px 0;
+//  padding: 0;
+//  grid-template-columns: repeat(5, 1fr);
+//  grid-column-gap: 5px;
+//  grid-template-rows: auto;
+//  list-style-type: none;
+//  align-items: center;
+//  justify-items: center;
+//  li.winery{
+//    //border: solid $wineColorLighter;
+//    font-family: 'lithos-pro', 'SteinAntik', 'Rokkitt', serif;
+//    font-size: 12px;
+//    min-height: 55px;
+//    vertical-align: center;
+//    margin: 5px;
+//    //display: flex;
+//    text-align: center;
+//    text-indent: -30px;
+//    border-radius: 20px;
+//    //max-width: 200px;
+//    //align-content: space-between;
+//    //align-items: center;
+//    //flex-direction: row;
+//    padding: 5px 5px 5px 30px;
+//  }
+//}
 
 
 
@@ -501,8 +534,9 @@ ul.wineries{
     background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs.svg"), url("assets/images/OWM_sky.svg");
   }
   .header{
-    margin: 10px 0 10px 185px;
-    padding: 10px 0 0 0;
+    //margin: 10px 0 10px 185px;
+    margin: 10px 0 10px 10px;
+    padding: 0 0 0 0;
     height: 130px;
     h1{
       font-size: 55px;
@@ -530,8 +564,10 @@ ul.wineries{
     grid-template-columns: repeat(4, 1fr);
   }
   .header{
-    margin: 10px 0 10px 170px;
-    padding: 10px 0 0 0;
+    //margin: 10px 0 10px 170px;
+    //margin: 10px 0 10px 10px;
+    margin: 0 0 10px 0;
+    padding: 0 0 0 0;
     height: 130px;
     h1{
       padding-top: 5px;
@@ -565,8 +601,12 @@ ul.wineries{
     background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate.svg"), url("assets/images/OWM_sky.svg");
   }
   .navbar div.tag-line a{
-    font-size: 14pt;
+    font-size: 13pt;
     font-family: 'lithos-pro', 'SteinAntik', 'Rokkitt', serif;
+  }
+  .navbar{
+    font-size: 11pt;
+    padding: .5rem 0;
   }
   .flexContainer {
     display: block;
@@ -606,6 +646,10 @@ ul.wineries{
       margin-left: 50px;
       padding: 5px 0px;
       height: 40px;
+    }
+    img.logoAlt{
+      padding: 5px 0px;
+      height: 50px;
     }
   }
   .footer {
