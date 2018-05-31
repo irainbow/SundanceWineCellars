@@ -19,8 +19,8 @@ export class HomeComponent implements OnInit {
     query = query.toLowerCase().trim();
 
     this.wineResults = this.wineManager.wineries
-      .filter(winery => winery.wineryName.toLowerCase().includes(query));
-      // .slice(0, 21);
+      .filter(winery => winery.wineryName.toLowerCase().includes(query))
+      .sort((a, b) => a.wineryName === b.wineryName ? 0 : a.wineryName < b.wineryName ? -1 : 1);
   }
 
   ngOnInit() {
