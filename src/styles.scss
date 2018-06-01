@@ -93,13 +93,13 @@ html { background-color: $contrastBkg;
 //}
 .left_image{
   max-width: 300px;
-  padding: 20px;
+  padding: 0 20px 20px 0 ;
   float: left;
 }
 
 .right_image{
   max-width: 300px;
-  padding: 20px;
+  padding: 20px 20px 20px 10px;
   float: right;
 }
 
@@ -110,6 +110,7 @@ hr.glyph {
   border: none;
   border-top: medium double $mainContrast;
   color: $mainContrast;
+  clear: both;
   text-align: center;
 }
 hr.glyph:after {
@@ -647,6 +648,17 @@ li.winery{
     }
   }
 
+  .left_image{
+    max-width: 250px;
+    padding: 15px;
+  }
+
+  .right_image{
+    max-width: 250px;
+    padding: 15px;
+  }
+
+
   .inlineElements{
     display: block;
     .displayAlt{
@@ -700,6 +712,16 @@ li.winery{
   }
   ul.wineries li.winery{
     width:33.333%;
+  }
+
+  .left_image{
+    max-width: 225px;
+    padding: 15px;
+  }
+
+  .right_image{
+    max-width: 225px;
+    padding: 15px;
   }
 
   .inlineElements{
@@ -814,6 +836,13 @@ li.winery{
 }
 
 @media screen and (max-width: 380px) {
+  .left_image{
+    display: none;
+  }
+
+  .right_image{
+      display: none;
+  }
   .main{
     .header{
       text-align: center;
