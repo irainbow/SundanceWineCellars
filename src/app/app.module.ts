@@ -11,6 +11,8 @@ import { WineManagerService } from './wine-manager.service';
 import { ShippingComponent } from './shipping/shipping.component';
 import { SundanceWineCellarsComponent } from './sundance-wine-cellars/sundance-wine-cellars.component';
 import { ContactComponent } from './contact/contact.component';
+import { HeaderOwmComponent } from './header-owm/header-owm.component';
+import { HeaderSwcComponent } from './header-swc/header-swc.component';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { ContactComponent } from './contact/contact.component';
     HomeComponent,
     ShippingComponent,
     SundanceWineCellarsComponent,
-    ContactComponent
+    ContactComponent,
+    HeaderOwmComponent,
+    HeaderSwcComponent
   ],
   imports: [
     NgbModule.forRoot(),
