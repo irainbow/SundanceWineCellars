@@ -5,8 +5,8 @@ import {ShippingComponent} from './shipping/shipping.component';
 import {SundanceWineCellarsComponent} from './sundance-wine-cellars/sundance-wine-cellars.component';
 import {HomeComponent} from './home/home.component';
 import {ContactComponent} from './contact/contact.component';
-// import {HeaderOWMComponent} from './headerOWM/headerOWM.component';
-// import {HeaderSWCComponent} from './headerSWC/headerSWC.component';
+import {HeaderOwmComponent} from './header-owm/header-owm.component';
+import {HeaderSwcComponent} from './header-swc/header-swc.component';
 
 
 
@@ -17,8 +17,8 @@ const routes: Routes = [
   { path: 'shipping', component: ShippingComponent },
   { path: 'sundance_wine_cellars', component: SundanceWineCellarsComponent },
   { path: 'contact', component: ContactComponent },
-  // { path: '', component: HeaderOWMComponent, outlet: 'header' },
-  // { path: '', component: HeaderSWCComponent, outlet: 'header' },
+  { path: '', component: HeaderOwmComponent, outlet: 'header' },
+  { path: '', component: HeaderSwcComponent, outlet: 'header' },
 ];
 
 @NgModule({
