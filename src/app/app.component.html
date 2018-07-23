@@ -43,10 +43,12 @@
 </div>
 
 <!-- Main Container -->
-<div class="main">
+<div class="main" [class.swc]="isSwcHeader" [class.owm]="isOwmHeader">
   <!-- SWC Header -->
   <div class="header"
        *ngIf="isSwcHeader"
+       [class.swc]="isSwcHeader"
+       [class.owm]="isOwmHeader"
   >
     <div class="flexContainer">
       <!--<div class="row">-->
@@ -83,34 +85,16 @@
   <!-- OWM Header -->
   <div class="header"
        *ngIf="isOwmHeader"
+       [class.swc]="isSwcHeader"
+       [class.owm]="isOwmHeader"
   >
     <div class="flexContainer">
       <!--<div class="row">-->
       <div class="inlineElements">
-        <div class="inlineElement">
-          <img class="logo"
-               src="assets/images/oregon_wine_merchants.svg"
-               alt="Oregon Wine Merchants"
-          />
-        </div>
         <div class="inlineElement banner_name" id="banner_name">
           <a href="/#">
             <h1>Oregon Wine Merchants</h1>
           </a>
-        </div>
-        <!--<div class="inlineElement">-->
-        <!--<h3 class="header-conjunction">-->
-        <!--by-->
-        <!--</h3>-->
-        <!--</div>-->
-
-
-        <!--<div class="inlineElement" id="est"><a href="#/"><h3>EST 1983</h3></a></div>-->
-        <div class="inlineElement displayAlt">
-          <img class="logoAlt"
-               src="assets/images/oregon_wine_merchants.svg"
-               alt="Oregon Wine Merchants"
-          />
         </div>
       </div>
     </div>
