@@ -91,6 +91,16 @@ $navbar-dark-toggler-border-color:  rgba($lighterContrastBkg, .1) !default;
   background-size: 58%, 58%, 90%, 100%;
 }
 
+.main.swcandowm{
+  max-width: 1300px;
+  margin: 0 auto;
+  background-color: $backgroundColor;
+  min-height: 100vh;
+  background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate.svg"), url("assets/images/OWM_sky.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: 0 0, right top, 50% 0px, 0 0;
+  background-size: 58%, 58%, 90%, 100%;
+}
 
 html { background-color: $contrastBkg;
 }
@@ -257,8 +267,8 @@ h3{
 }
 
 .header.owm{
-  height: 170px;
-  padding: 10px 0 0 0;
+  height: 185px;
+  padding: 0px 0 0 0;
   //margin: 20px 0 0px 205px;
   margin: 10px 0 0 10px;
   .inlineElements{
@@ -282,7 +292,7 @@ h3{
     }
     #banner_name{
       display: flex;
-      margin-left:195px;
+      margin-left:205px;
       align-self: flex-start;
       h1{
         font-size: 55px;
@@ -307,6 +317,57 @@ h3{
   }
 }
 
+
+.header.swcandowm{
+  height: 185px;
+  padding: 0px 0 0 0;
+  //margin: 20px 0 0px 205px;
+  margin: 10px 0 0 10px;
+  .inlineElements{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    .inlineElement{
+      margin-left: 10px;
+      &:first-of-type{
+        margin-left: 120px;
+      }
+      .header-conjunction{
+        font-family: 'Norican', cursive;
+        //padding: 10px 0 0 0;
+      }
+      img.logo{
+        padding: 10px 0px;
+        height: 95px;
+      }
+    }
+    #banner_name{
+      display: flex;
+      margin-left:205px;
+      align-self: flex-start;
+      h1{
+        font-size: 55px;
+      }
+    }
+  }
+  h1{
+    //font-family: nexa_rust_script_l0regular, futura, sans-serif;
+    color: $mainContrast;
+    font-size: 50px;
+    line-height: 1.5em;
+    margin: 0 0 0 0;
+    padding: 0;
+  }
+  h3{
+    font-family: nexa_rust_script_l0regular, futura, sans-serif;
+    color: $mainContrast;
+    font-size: 20px;
+    line-height: 75px;
+    margin: 0 5px 0 0;
+    padding: 0;
+  }
+}
 
 .flexContainer {
   display: flex;
@@ -835,31 +896,37 @@ li.winery{
 
 //Size Adjustment Queries
 @media screen and (max-width: 1200px) {
-  .main{
+  .main.owm{
+    max-width: 1100px;
+    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_new.svg"), url("assets/images/OWM_sky.svg");
+    .header{
+      //margin: 10px 0 10px 185px;
+      margin: 10px 0 10px 10px;
+      padding: 0 0 0 0;
+      height: 130px;
+      text-align: center;
+      h1{
+        font-size: 55px;
+        margin: 0 5px 0 0;
+
+      }
+      h3{
+        font-size: 15px;
+        line-height: 55px;
+        margin: 0 5px 0 0;
+
+      }
+      img{
+        padding: 15px 0px;
+        height: 56px;
+      }
+    }
+  }
+  .main.swc{
     max-width: 1100px;
     background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_new.svg"), url("assets/images/OWM_sky.svg");
   }
-  .header{
-    //margin: 10px 0 10px 185px;
-    margin: 10px 0 10px 10px;
-    padding: 0 0 0 0;
-    height: 130px;
-    h1{
-      font-size: 55px;
-      margin: 0 5px 0 0;
 
-    }
-    h3{
-      font-size: 15px;
-      line-height: 55px;
-      margin: 0 5px 0 0;
-
-    }
-    img{
-      padding: 15px 0px;
-      height: 56px;
-    }
-  }
 }
 @media screen and (max-width: 1034px) {
   .main{

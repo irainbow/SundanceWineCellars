@@ -6,7 +6,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SubpageComponent } from './subpage/subpage.component';
-import { HomeComponent } from './home/home.component';
+import { OwmComponent } from './owm/owm.component';
 import { WineManagerService } from './wine-manager.service';
 import { ShippingComponent } from './shipping/shipping.component';
 import { SundanceWineCellarsComponent } from './sundance-wine-cellars/sundance-wine-cellars.component';
@@ -20,7 +20,7 @@ import { HeaderSwcComponent } from './header-swc/header-swc.component';
     // NgbModule,
     AppComponent,
     SubpageComponent,
-    HomeComponent,
+    OwmComponent,
     ShippingComponent,
     SundanceWineCellarsComponent,
     ContactComponent,

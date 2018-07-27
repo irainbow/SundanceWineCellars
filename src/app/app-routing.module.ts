@@ -3,25 +3,29 @@ import { RouterModule, Routes } from '@angular/router';
 import {SubpageComponent} from './subpage/subpage.component';
 import {ShippingComponent} from './shipping/shipping.component';
 import {SundanceWineCellarsComponent} from './sundance-wine-cellars/sundance-wine-cellars.component';
-import {HomeComponent} from './home/home.component';
+import {OwmComponent} from './owm/owm.component';
 import {ContactComponent} from './contact/contact.component';
-import {HeaderOwmComponent} from './header-owm/header-owm.component';
-import {HeaderSwcComponent} from './header-swc/header-swc.component';
+// import {HeaderOwmComponent} from './header-owm/header-owm.component';
+// import {HeaderSwcComponent} from './header-swc/header-swc.component';
 
 
 const swc_routes: Routes = [
   {
     path: '',
-    component: HomeComponent,
+    component: SundanceWineCellarsComponent,
     pathMatch: 'full',
+    data: {
+      header: 'swc',
+      title: 'Sundance Wine Cellars'
+    } as RouteData
+  },
+  {
+    path: 'owm',
+    component: OwmComponent,
     data: {
       header: 'owm',
       title: 'Oregon Wine Merchants'
     } as RouteData
-  },
-  {
-    path: 'home',
-    component: HomeComponent
   },
   {
     path: 'subpage',
@@ -43,28 +47,28 @@ const swc_routes: Routes = [
     path: 'contact',
     component: ContactComponent,
     data: {
-      header: 'swc',
+      header: 'swcandowm',
       title: 'Sundance Wine Cellars: Contact'
     } as RouteData
   },
-  {
-    path: '',
-    component: HeaderOwmComponent,
-    outlet: 'header'
-  },
-  {
-    path: '',
-    component: HeaderSwcComponent,
-    outlet: 'header'
-  },
+  // {
+  //   path: '',
+  //   component: HeaderOwmComponent,
+  //   outlet: 'header'
+  // },
+  // {
+  //   path: '',
+  //   component: HeaderSwcComponent,
+  //   outlet: 'header'
+  // },
 ];
 
 
 
 // [
-//   { path: 'home', children: [
+//   { path: 'owm', children: [
 //       { path: '' , component: HeaderSwcComponent, outlet: 'header'},
-//       { path: 'home', component: HomeComponent},
+//       { path: 'owm', component: OwmComponent},
 //     ]}
 // ],
 
@@ -83,7 +87,7 @@ export class AppRoutingModule {
 }
 
 export interface RouteData {
-  header: 'owm' | 'swc';
+  header: 'owm' | 'swc' | 'swcandowm';
   title: string;
 }
 

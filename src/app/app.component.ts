@@ -28,6 +28,10 @@ export class AppComponent {
     return this.routeData.header === 'swc';
   }
 
+  get isSwcAndOwmHeader() {
+    return this.routeData.header === 'swcandowm';
+  }
+
   constructor(
     router: Router,
     private title: Title

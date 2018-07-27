@@ -3,10 +3,10 @@ import {WineManagerService, WineryInfo} from '../wine-manager.service';
 
 @Component({
   selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  templateUrl: './owm.component.html',
+  styleUrls: ['./owm.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class OwmComponent implements OnInit {
   title = 'Sundance Wine Cellars';
 
   wineResults: WineryInfo[] | null = null;
