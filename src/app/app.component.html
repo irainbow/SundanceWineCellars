@@ -110,7 +110,7 @@
     </div>
   </div>
 
-  <!-- OWM Header -->
+  <!-- BOTH Header -->
   <div class="header"
        *ngIf="isSwcAndOwmHeader"
        [class.swc]="isSwcHeader"
@@ -120,17 +120,31 @@
     <div class="flexContainer">
       <!--<div class="row">-->
       <div class="inlineElements">
+        <div class="inlineElement">
+          <img class="logo"
+               src="assets/images/sundance_wine_cellars_OWM.svg"
+               alt="Sundance Wine Cellars"
+          />
+        </div>
         <div class="inlineElement banner_name" id="banner_name">
           <a href="/#">
-            <h1>Oregon Wine Merchants and SWC</h1>
+            <h1>Oregon Wine Merchants</h1>
           </a>
         </div>
-      </div>
-      <div class="inlineElement displayAlt">
-        <img class="logoAlt"
-             src="assets/images/sundance_wine_cellars.svg"
-             alt="Sundance Wine Cellars"
-        />
+        <!--<div class="inlineElement">-->
+        <!--<h3 class="header-conjunction">-->
+        <!--by-->
+        <!--</h3>-->
+        <!--</div>-->
+
+
+        <!--<div class="inlineElement" id="est"><a href="#/"><h3>EST 1983</h3></a></div>-->
+        <div class="inlineElement displayAlt">
+          <img class="logoAlt"
+               src="assets/images/sundance_wine_cellars.svg"
+               alt="Sundance Wine Cellars"
+          />
+        </div>
       </div>
     </div>
   </div>

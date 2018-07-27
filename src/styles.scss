@@ -96,7 +96,7 @@ $navbar-dark-toggler-border-color:  rgba($lighterContrastBkg, .1) !default;
   margin: 0 auto;
   background-color: $backgroundColor;
   min-height: 100vh;
-  background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate.svg"), url("assets/images/OWM_sky.svg");
+  background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_both.svg"), url("assets/images/OWM_sky.svg");
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-position: 0 0, right top, 50% 0px, 0 0;
   background-size: 58%, 58%, 90%, 100%;
@@ -319,8 +319,8 @@ h3{
 
 
 .header.swcandowm{
-  height: 185px;
-  padding: 0px 0 0 0;
+  height: 150px;
+  padding: 10px 0 0 0;
   //margin: 20px 0 0px 205px;
   margin: 10px 0 0 10px;
   .inlineElements{
@@ -339,15 +339,15 @@ h3{
       }
       img.logo{
         padding: 10px 0px;
-        height: 95px;
+        height: 130px;
       }
     }
     #banner_name{
-      display: flex;
-      margin-left:205px;
+      display: none;
+      margin-left:80px;
       align-self: flex-start;
       h1{
-        font-size: 55px;
+        font-size: 45px;
       }
     }
   }
