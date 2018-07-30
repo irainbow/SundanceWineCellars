@@ -235,7 +235,7 @@ h3{
         //padding: 10px 0 0 0;
       }
       img.logo{
-        padding: 10px 0px;
+        padding: 15px 20px 12px 0;
         height: 95px;
       }
     }
@@ -924,7 +924,34 @@ li.winery{
   }
   .main.swc{
     max-width: 1100px;
-    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_new.svg"), url("assets/images/OWM_sky.svg");
+    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_new.svg"), url("assets/images/OWM_sky_swc.svg");
+    .header.swc{
+      .inlineElements{
+        display: block;
+        .inlineElement{
+          .header-conjunction{
+            display: none;
+          }
+          img.logo{
+            display: none;
+            margin: 10px 0;
+            padding: 15px 0;
+            height: 85px;
+          }
+        }
+      }
+      margin: 0 0 10px 0;
+      padding: 0 0 0 0;
+      height: 130px;
+      h1{
+        padding-top: 5px;
+        font-size: 48px;
+      }
+      h3{
+        font-size: 20px;
+        line-height: 50px;
+      }
+    }
   }
 
 }
@@ -936,7 +963,35 @@ li.winery{
   ul.wineries {
     grid-template-columns: repeat(4, 1fr);
   }
-  .header{
+  .header.swc{
+    .inlineElements{
+      display: block;
+      .displayAlt{
+        text-align: center;
+        font-family: 'lithos-pro', 'SteinAntik', 'Rokkitt', serif;
+        font-weight: bold;
+        //font-family: 'Norican', cursive;
+        color: $secondaryContrast;
+        font-size: 15px;
+
+      }
+      .inlineElement{
+        .header-conjunction{
+          display: none;
+        }
+        img.logo{
+          display: none;
+          margin-left: 50px;
+          padding: 5px 0px;
+          height: 40px;
+        }
+        img.logoAlt{
+          display: none;
+          padding: 5px 0px;
+          height: 50px;
+        }
+      }
+    }
     //margin: 10px 0 10px 170px;
     //margin: 10px 0 10px 10px;
     margin: 0 0 10px 0;
@@ -969,16 +1024,18 @@ li.winery{
 }
 
 @media screen and (max-width: 992px) {
+
+
   .main{
     max-width: 925px;
     background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_new.svg"), url("assets/images/OWM_sky.svg");
   }
   .navbar div.tag-line a{
-    font-size: 13pt;
+    font-size: 11pt;
     font-family: 'lithos-pro', 'SteinAntik', 'Rokkitt', serif;
   }
   .navbar{
-    font-size: 11pt;
+    font-size: 10pt;
     padding: .5rem 0;
   }
   .flexContainer {
@@ -1046,6 +1103,9 @@ li.winery{
   }
 }
 @media screen and (max-width: 768px) {
+  .container{
+    max-width: 600px;
+  }
   .main{
     max-width: 660px;
   }
