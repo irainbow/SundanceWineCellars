@@ -97,7 +97,7 @@ $navbar-dark-toggler-border-color:  rgba($lighterContrastBkg, .1) !default;
   margin: 0 auto;
   background-color: $backgroundColor;
   min-height: 100vh;
-  background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_both.svg"), url("assets/images/OWM_sky.svg");
+  background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_both_logo.svg"), url("assets/images/OWM_sky.svg");
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-position: 0 0, right top, 50% 0px, 0 0;
   background-size: 58%, 58%, 90%, 100%;
@@ -340,7 +340,8 @@ h3{
       }
       img.logo{
         padding: 10px 0px;
-        height: 130px;
+        height: 125px;
+        visibility: hidden;
       }
     }
     #banner_name{
@@ -865,8 +866,6 @@ li.winery{
 }
 
 
-
-
 //#double li  { width:50%;}
 //#triple li  { width:33.333%; }
 //#quad li    { width:25%; }
@@ -896,30 +895,16 @@ li.winery{
 
 
 //Size Adjustment Queries
+
+//1200
+
 @media screen and (max-width: 1200px) {
   .main.owm{
     max-width: 1100px;
-    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_new.svg"), url("assets/images/OWM_sky.svg");
+    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs.svg"), url("assets/images/OWM_sky.svg");
     .header{
-      //margin: 10px 0 10px 185px;
-      margin: 10px 0 10px 10px;
-      padding: 0 0 0 0;
-      height: 130px;
-      text-align: center;
-      h1{
-        font-size: 55px;
-        margin: 0 5px 0 0;
-
-      }
-      h3{
-        font-size: 15px;
-        line-height: 55px;
-        margin: 0 5px 0 0;
-
-      }
-      img{
-        padding: 15px 0px;
-        height: 56px;
+      #banner_name{
+        margin-left:185px
       }
     }
   }
@@ -941,96 +926,124 @@ li.winery{
           }
         }
       }
-      margin: 0 0 10px 0;
-      padding: 0 0 0 0;
-      height: 130px;
-      h1{
-        padding-top: 5px;
-        font-size: 48px;
-      }
-      h3{
-        font-size: 20px;
-        line-height: 50px;
-      }
     }
   }
+  .main.swcandowm{
+    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_both_logo.svg"), url("assets/images/OWM_sky.svg");
+  }
+
 
 }
+
+//1034
+
 @media screen and (max-width: 1034px) {
-  .main{
-    max-width: 925px;
-    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_new.svg"), url("assets/images/OWM_sky.svg");
-  }
-  ul.wineries {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .header.swc{
-    .inlineElements{
-      display: block;
-      .displayAlt{
-        text-align: center;
-        font-family: 'lithos-pro', 'SteinAntik', 'Rokkitt', serif;
-        font-weight: bold;
-        //font-family: 'Norican', cursive;
-        color: $secondaryContrast;
-        font-size: 15px;
 
+  .main.owm{
+    max-width: 1100px;
+    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs.svg"), url("assets/images/OWM_sky.svg");
+    .header.owm{
+      .flexContainer{
+        justify-content: center;
+        .inlineElements{
+          display: flex;
+          justify-content: center;
+          align-self: center;
+
+          .inlineElement{
+            .header-conjunction{
+              display: none;
+            }
+            img.logo{
+              display: none;
+              margin: 10px 0;
+              padding: 15px 0;
+              height: 85px;
+            }
+          }
+        }
+        #banner_name{
+          margin-left:0;
+          align-self: center;
+          margin-top: 10px;
+          h1{
+            text-align: center;
+            font-size: 58px;
+          }
+        }
       }
-      .inlineElement{
-        .header-conjunction{
-          display: none;
-        }
-        img.logo{
-          display: none;
-          margin-left: 50px;
-          padding: 5px 0px;
-          height: 40px;
-        }
-        img.logoAlt{
-          display: none;
-          padding: 5px 0px;
-          height: 50px;
-        }
-      }
-    }
-    //margin: 10px 0 10px 170px;
-    //margin: 10px 0 10px 10px;
-    margin: 0 0 10px 0;
-    padding: 0 0 0 0;
-    height: 130px;
-    h1{
-      padding-top: 5px;
-      font-size: 48px;
-    }
-    h3{
-      font-size: 20px;
-      line-height: 50px;
     }
   }
-
-  .inlineElements{
-
-    .inlineElement{
-      .header-conjunction{
-        padding: 10px 0 0 0;
+  .main.swc{
+    max-width: 1100px;
+    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_new.svg"), url("assets/images/OWM_sky_swc.svg");
+    .header.swc{
+      .inlineElements{
+        display: block;
+        .inlineElement{
+          .header-conjunction{
+            display: none;
+          }
+          img.logo{
+            display: none;
+            margin: 10px 0;
+            padding: 15px 0;
+            height: 85px;
+          }
+        }
       }
-      img.logo{
-        padding: 15px 0px 10px 0;
-        height: 60px;
-      }
-
     }
-
+  }
+  .main.swcandowm{
+    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_both_logo.svg"), url("assets/images/OWM_sky.svg");
   }
 }
+
+//992
 
 @media screen and (max-width: 992px) {
 
+  .main.owm{
+    max-width: 1100px;
+    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs.svg"), url("assets/images/OWM_sky.svg");
+    .header.owm{
+      height: 135px;
+      .flexContainer{
+        justify-content: center;
+        .inlineElements{
+          display: flex;
+          justify-content: center;
+          align-self: center;
 
-  .main{
-    max-width: 925px;
-    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_new.svg"), url("assets/images/OWM_sky.svg");
+          .inlineElement{
+            .header-conjunction{
+              display: none;
+            }
+            img.logo{
+              display: none;
+              margin: 10px 0;
+              padding: 15px 0;
+              height: 85px;
+            }
+          }
+        }
+        #banner_name{
+          margin-left:0;
+          align-self: center;
+          margin-top: 10px;
+          h1{
+            text-align: center;
+            font-size: 46px;
+          }
+        }
+      }
+    }
   }
+
+  //.main{
+  //  max-width: 925px;
+  //  background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_new.svg"), url("assets/images/OWM_sky.svg");
+  //}
   .navbar div.tag-line a{
     font-size: 11pt;
     font-family: 'lithos-pro', 'SteinAntik', 'Rokkitt', serif;
@@ -1039,21 +1052,21 @@ li.winery{
     font-size: 10pt;
     padding: .5rem 0;
   }
-  .flexContainer {
-    display: block;
-    //    flex-direction: row;
-    //    justify-content: space-between;
-    //    align-items: flex-end;
-  }
-  .header{
-    margin: 10px 0 35px 0;
-    height: 100px;
-    h1{
-      font-size: 48px;
-      line-height: 50px;
-      text-align: center;
-    }
-  }
+  //.flexContainer {
+  //  display: block;
+  //  //    flex-direction: row;
+  //  //    justify-content: space-between;
+  //  //    align-items: flex-end;
+  //}
+  //.header{
+  //  margin: 10px 0 35px 0;
+  //  height: 100px;
+  //  h1{
+  //    font-size: 48px;
+  //    line-height: 50px;
+  //    text-align: center;
+  //  }
+  //}
 
   .left_image{
     max-width: 250px;
@@ -1103,7 +1116,54 @@ li.winery{
     padding-bottom: 90px;
   }
 }
+
+//768
+
 @media screen and (max-width: 768px) {
+
+  .main.owm{
+    h2{
+      font-size: 24px;
+    }
+    h3{
+      font-size: 18px;
+    }
+    max-width: 1100px;
+    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs.svg"), url("assets/images/OWM_sky.svg");
+    .header.owm{
+      height: 105px;
+      .flexContainer{
+        justify-content: center;
+        .inlineElements{
+          display: flex;
+          justify-content: center;
+          align-self: center;
+
+          .inlineElement{
+            .header-conjunction{
+              display: none;
+            }
+            img.logo{
+              display: none;
+              margin: 10px 0;
+              padding: 15px 0;
+              height: 85px;
+            }
+          }
+        }
+        #banner_name{
+          margin-left:0;
+          align-self: center;
+          margin-top: 10px;
+          h1{
+            text-align: center;
+            font-size: 40px;
+          }
+        }
+      }
+    }
+  }
+
   .container{
     max-width: 600px;
   }
@@ -1123,27 +1183,25 @@ li.winery{
   ul.wineries li.winery{
     width:33.333%;
   }
-
   .left_image{
     max-width: 225px;
     padding: 15px;
   }
-
   .right_image{
     max-width: 225px;
     padding: 15px;
   }
 
-  .inlineElements{
-
-    .displayAlt{
-      font-size: 16px;
-      line-height: 30px;
-    }
-    .inlineElement{
-    }
-
-  }
+  //.inlineElements{
+  //
+  //  .displayAlt{
+  //    font-size: 16px;
+  //    line-height: 30px;
+  //  }
+  //  .inlineElement{
+  //  }
+  //
+  //}
   .footer {
     //display: inline;
     padding-top: 0px;
@@ -1175,7 +1233,66 @@ li.winery{
   }
 }
 
+
+@media screen and (max-width: 683px) {
+  .main.owm{
+    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_logo.svg"), url("assets/images/OWM_sky.svg");
+    .header.owm{
+      height: 85px;
+      .flexContainer #banner_name h1 {
+        visibility: hidden;
+      }
+    }
+
+  }
+
+}
+
 @media screen and (max-width: 576px) {
+  .main.owm{
+    h2{
+      font-size: 24px;
+    }
+    h3{
+      font-size: 18px;
+    }
+    max-width: 1100px;
+    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_logo.svg"), url("assets/images/OWM_sky.svg");
+    .header.owm{
+      height: 80px;
+      .flexContainer{
+        justify-content: center;
+        .inlineElements{
+          display: flex;
+          justify-content: center;
+          align-self: center;
+
+          .inlineElement{
+            .header-conjunction{
+              display: none;
+            }
+            img.logo{
+              display: none;
+              margin: 10px 0;
+              padding: 15px 0;
+              height: 85px;
+            }
+          }
+        }
+        #banner_name{
+          margin-left:0;
+          align-self: center;
+          margin-top: 10px;
+          h1{
+            text-align: center;
+            font-size: 40px;
+          }
+        }
+      }
+    }
+  }
+
+
   .main{
     //  max-width: 970px;
     background-color: $backgroundColor;
