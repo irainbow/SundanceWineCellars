@@ -695,12 +695,12 @@ ul.myNav{
 #ic_signupform .elcontainer .formEl.fieldtype-checkbox h3 {
   font-size: 100%;
   font-weight: bold;
-  color: #5a5a5e;
+  color: $secondaryContrastDarker;
 }
 
 #ic_signupform .elcontainer .formEl.fieldtype-input input[type="text"],
 #ic_signupform .elcontainer .formEl.fieldtype-dropdown select {
-  background-color: $secondaryContrastDarker;
+  background-color: $contrastBkg;
   border: 1px solid #8E846F;
   border-radius: 3px;
 }
@@ -713,24 +713,24 @@ ul.myNav{
 }
 
 #ic_signupform .elcontainer .formEl input[type="text"]::-moz-placeholder {
-  color: #bdbdbf;
+  color: $secondaryContrastDarker;
   font-family: inherit;
 }
 
 #ic_signupform .elcontainer .formEl input[type="text"]::-webkit-input-placeholder {
-  color: #bdbdbf;
+  color: $secondaryContrastDarker;
   font-family: inherit;
 }
 
 #ic_signupform .elcontainer .formEl input[type="text"]:-ms-input-placeholder {
-  color: #bdbdbf;
+  color: $secondaryContrastDarker;
   font-family: inherit;
 }
 
 #ic_signupform .elcontainer .formEl input[type="text"],
 #ic_signupform .elcontainer .formEl select,
 #ic_signupform .elcontainer .formEl .option-container label {
-  color: #bdbdbf;
+  color: $secondaryContrastDarker;
   font-family: inherit;
 }
 
