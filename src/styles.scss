@@ -595,20 +595,20 @@ ul.myNav{
 
 //CONTACT
 
-//FROM ICONTACT
+/FROM ICONTACT
 
 
-#ic_signupform .elcontainer {
- background: #5a6378;
- text-align: center;
- max-width: 500px;
- padding: 30px 30px;
- border-radius: 3px;
- border: 1px solid #acacac;
- font-size: 12px;
- color: #5a5a5e;
- font-family: lucida grande;
-}
+ #ic_signupform .elcontainer {
+   background: $secondaryContrast;
+   text-align: center;
+   max-width: 500px;
+   padding: 30px 30px;
+   border-radius: 3px;
+   border: 1px solid $contrastBkg;
+   font-size: 12px;
+   color: $contrastBkg;
+   font-family: lucida grande;
+ }
 
 #ic_signupform .elcontainer.center-aligned .formEl {
   margin-right: auto;
@@ -621,7 +621,7 @@ ul.myNav{
 
 #ic_signupform .form-header {
 
-  background: #5a6378;
+  background: $secondaryContrast;
   margin-top: -30px;
   margin-left: -30px;
   margin-right: -30px;
@@ -633,8 +633,8 @@ ul.myNav{
   border-radius: calc(3px - 1px) calc(3px - 1px) 0 0;
   text-align: center;
   font-size: 150%;
-  color: #adb5c4;
-  border-bottom: 5px solid #555e72;
+  color: $contrastBkg;
+  border-bottom: 5px solid $secondaryContrastDarker;
 }
 
 #ic_signupform .elcontainer.inline-label-left .formEl.fieldtype-input label,
@@ -699,8 +699,8 @@ ul.myNav{
 
 #ic_signupform .elcontainer .formEl.fieldtype-input input[type="text"],
 #ic_signupform .elcontainer .formEl.fieldtype-dropdown select {
-  background-color: #393f4f;
-  border: 1px solid #414759;
+  background-color: $secondaryContrastDarker;
+  border: 1px solid #8E846F;
   border-radius: 3px;
 }
 
@@ -760,12 +760,12 @@ ul.myNav{
 }
 
 #ic_signupform .elcontainer .submit-container input[type="submit"] {
-  background: #4eb8cd;
+  background: $contrastBkg;
   border: 0px solid #e7ce4d;
   border-radius: 3px;
   line-height: 1em;
   padding: 15px 25px;
-  color: #ffffff;
+  color: $secondaryContrastDarker;
   font-size: 100%;
   font-family: inherit;
   width: 100%;
