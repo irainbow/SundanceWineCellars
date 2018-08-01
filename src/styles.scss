@@ -219,7 +219,7 @@ h3{
 }
 
 .header.swc{
-  height: 150px;
+  height: 140px;
   padding: 10px 0 0 0;
   //margin: 20px 0 0px 205px;
   margin: 10px 0 0 10px;
@@ -936,6 +936,7 @@ li.winery{
     max-width: 1100px;
     background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_new.svg"), url("assets/images/OWM_sky_swc.svg");
     .header.swc{
+      height: 120px;
       .inlineElements{
         display: block;
         .inlineElement{
@@ -1000,8 +1001,9 @@ li.winery{
   }
   .main.swc{
     max-width: 1100px;
-    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_new.svg"), url("assets/images/OWM_sky_swc.svg");
+    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_new_med.svg"), url("assets/images/OWM_sky_swc.svg");
     .header.swc{
+      height: 105px;
       .inlineElements{
         display: block;
         .inlineElement{
@@ -1058,6 +1060,27 @@ li.winery{
           h1{
             text-align: center;
             font-size: 46px;
+          }
+        }
+      }
+    }
+  }
+  .main.swc{
+    max-width: 1100px;
+    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_new_medsm.svg"), url("assets/images/owm_sky_med.svg");
+    .header.swc{
+      height: 95px;
+      .inlineElements{
+        display: block;
+        .inlineElement{
+          .header-conjunction{
+            display: none;
+          }
+          img.logo{
+            display: none;
+            margin: 10px 0;
+            padding: 15px 0;
+            height: 85px;
           }
         }
       }
@@ -1224,6 +1247,27 @@ li.winery{
       }
     }
   }
+  .main.swc{
+    max-width: 1100px;
+    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_new_medsm.svg"), url("assets/images/owm_sky_med.svg");
+    .header.swc{
+      height: 88px;
+      .inlineElements{
+        display: block;
+        .inlineElement{
+          .header-conjunction{
+            display: none;
+          }
+          img.logo{
+            display: none;
+            margin: 10px 0;
+            padding: 15px 0;
+            height: 85px;
+          }
+        }
+      }
+    }
+  }
 
   .main.swcandowm{
     max-width: 1100px;
@@ -1344,6 +1388,14 @@ li.winery{
 
   }
 
+  .main.swc{
+    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_swc_logo_small.svg"), url("assets/images/owm_sky_small.svg");
+    .header.swc{
+      height: 100px;
+    }
+  }
+
+
   .main.swcandowm{
     .header.swcandowm{
       height: 110px;
@@ -1393,6 +1445,12 @@ li.winery{
           }
         }
       }
+    }
+  }
+  .main.swc{
+    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_swc_logo_small.svg"), url("assets/images/owm_sky_small.svg");
+    .header.swc{
+      height: 90px;
     }
   }
 
