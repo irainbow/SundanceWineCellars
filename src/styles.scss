@@ -34,7 +34,7 @@ $secondaryContrastDarker: #2d341f;
 $greenContrast: #e3da9f;
 $greenContrast2: #bbbb4e;
 $backgroundColor: #D3D1B2;
-$sunColor: rgba(255, 226, 153, 0.75);
+$sunColor: rgba(255, 217, 128, 0.75);
 $contrastBkg: #EADAB7; //rgb(214, 163, 176)
 $lighterContrastBkg: #fff2d9; //rgb(214, 163, 176)
 $noColorOverride: hsla(84,65%,90%, 0);
@@ -777,8 +777,8 @@ ul.myNav{
   //flex: 1 1 auto;
   //margin: 10px;
   text-align: center;
-  //text-transform: uppercase;
-  transition: 0.5s;
+  text-transform: uppercase;
+  transition: 1s;
   background-size: 200% auto;
   /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
   box-shadow: inset 0 0 20px hsla(0, 0, 0, 0.1);
@@ -789,7 +789,7 @@ ul.myNav{
 }
 
 #ic_signupform .elcontainer .submit-container input[type="submit"]:hover {
-  background-position: right center; /* change the direction of the change here */
+  background-position: 600px -600px; /* change the direction of the change here */
 }
 
 //END FROM ICONTACT
@@ -1064,6 +1064,43 @@ li.winery{
     }
   }
 
+  .main.swcandowm{
+    max-width: 1100px;
+    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_both_logos.svg"), url("assets/images/OWM_sky.svg");
+    .header.swcandowm{
+      height: 135px;
+      .flexContainer{
+        justify-content: center;
+        .inlineElements{
+          display: flex;
+          justify-content: center;
+          align-self: center;
+
+          .inlineElement{
+            margin: 0 0 20px 0px;
+            .header-conjunction{
+              //display: none;
+            }
+            img.logo{
+              margin: 10px 0;
+              padding: 0;
+              height: 100px;
+            }
+          }
+        }
+        #banner_name{
+          margin-left:0;
+          align-self: center;
+          margin-top: 10px;
+          h1{
+            text-align: center;
+            font-size: 46px;
+          }
+        }
+      }
+    }
+  }
+
   //.main{
   //  max-width: 925px;
   //  background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_new.svg"), url("assets/images/OWM_sky.svg");
@@ -1188,6 +1225,43 @@ li.winery{
     }
   }
 
+  .main.swcandowm{
+    max-width: 1100px;
+    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_both_logos_small.svg"), url("assets/images/owm_sky_small.svg");
+    .header.swcandowm{
+      height: 125px;
+      .flexContainer{
+        justify-content: center;
+        .inlineElements{
+          display: flex;
+          justify-content: center;
+          align-self: center;
+
+          .inlineElement{
+            margin: 0 0 20px 0px;
+            .header-conjunction{
+              //display: none;
+            }
+            img.logo{
+              margin: 10px 0;
+              padding: 0;
+              height: 100px;
+            }
+          }
+        }
+        #banner_name{
+          margin-left:0;
+          align-self: center;
+          margin-top: 10px;
+          h1{
+            text-align: center;
+            font-size: 46px;
+          }
+        }
+      }
+    }
+  }
+
   .container{
     max-width: 600px;
   }
@@ -1259,15 +1333,21 @@ li.winery{
 
 
 @media screen and (max-width: 683px) {
-  .main.owm{
+  .main.owm {
     background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_logo.svg"), url("assets/images/OWM_sky.svg");
-    .header.owm{
+    .header.owm {
       height: 85px;
       .flexContainer #banner_name h1 {
         visibility: hidden;
       }
     }
 
+  }
+
+  .main.swcandowm{
+    .header.swcandowm{
+      height: 110px;
+    }
   }
 
 }
@@ -1316,6 +1396,11 @@ li.winery{
     }
   }
 
+  .main.swcandowm{
+    .header.swcandowm{
+      height: 95px;
+    }
+  }
 
   .main{
     //  max-width: 970px;
