@@ -503,6 +503,9 @@ ul.myNav{
   text-transform: uppercase;
   font-size: 13pt;
   .foot{
+    .shorter_text_form{
+      display: none;
+    }
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -511,6 +514,9 @@ ul.myNav{
       margin-left: 10px;
     }
     .alt-footer-info{
+      display: none;
+    }
+    .alt-footer-icons{
       display: none;
     }
   }
@@ -1344,7 +1350,7 @@ li.winery{
   //}
   .footer {
     //display: inline;
-    padding-top: 0px;
+    padding: 0;
     font-size: 12px;
     height: 45px;
     display: flex;
@@ -1356,10 +1362,20 @@ li.winery{
     .footer-phone{
       display: none;
     }
-    .foot .alt-footer-info{
-      display: inline;
-      a{
-        color: $contrastBkg;
+    .foot{
+      .alt-footer-info{
+        display: inline;
+        a{
+          color: $contrastBkg;
+        }
+      }
+      .alt-footer-phone{
+        display: inline;
+        a{
+          display: inline;
+          color: $contrastBkg;
+          font-size: 10pt;
+        }
       }
     }
     .footer-icons{
@@ -1558,34 +1574,101 @@ li.winery{
     background-position: 0 0, right top;
     background-size: 55%, 55%;
   }
-  .footer {
-    //display: inline;
-    position: relative;
-    padding-top: 0px;
-    font-size: 12px;
-    height: 75px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-    .footer-info{
-      display: none;
-    }
-    .footer-phone{
-      display: none;
-    }
-    .foot .alt-footer-info{
-      display: inline;
-      a{
-        color: $contrastBkg;
-      }
-    }
-    .footer-icons{
-      img{
-        height: 25px;
-      }
-    }
-  }
+
+ .footer{
+       position: relative;
+       padding-top: 0px;
+       font-size: 12px;
+   background-color: $secondaryContrast;
+   color: $contrastBkg;
+   position: relative;
+   //bottom: 0;
+   height: 140px;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 100%;
+   align-items: center;
+   font-family: 'lithos-pro', 'SteinAntik', 'Rokkitt', serif;
+   text-transform: uppercase;
+   font-size: 10pt;
+   .footer-icons{
+     display: none;
+   }
+   .foot{
+     .shorter_text_form{
+       display: inline;
+     }
+     .longer_text_form{
+       display: none;
+     }
+     .alt-footer-icons{
+       display: inline;
+       img{
+         height: 40px;
+         padding: 5px;
+       }
+     }
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+     .footer-phone{
+       display: none;
+     }
+     .alt-footer-phone{
+       display: inline;
+       a{
+         display: inline;
+         color: $contrastBkg;
+         font-size: 10pt;
+       }
+     }
+     .footer-info{
+       display: block;
+       text-align: center;
+       line-height: 25px;
+       margin-top: -5px;
+     }
+     .alt-footer-info{
+       display: none;
+     }
+   }
+ }
+
+  //.footer {
+  //  height: 90px;
+  //  .foot{
+  //    //display: inline;
+  //    position: relative;
+  //    padding-top: 0px;
+  //    font-size: 12px;
+  //    height: 75px;
+  //    display: flex;
+  //    align-items: center;
+  //    flex-direction: column;
+  //    justify-content: space-around;
+  //    .footer-info{
+  //      //display: none;
+  //    }
+  //    .footer-phone{
+  //      display: none;
+  //    }
+  //    .foot .alt-footer-info{
+  //      display: inline;
+  //      a{
+  //        color: $contrastBkg;
+  //        display: inline-block;
+  //      }
+  //    }
+  //    .footer-icons{
+  //      img{
+  //        height: 25px;
+  //      }
+  //    }
+  //  }
+  //}
   .content{
     padding-bottom: 55px;
   }
