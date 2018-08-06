@@ -580,13 +580,13 @@ ul.myNav{
   }
 }
 .staff_pics{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  //display: flex;
+  //align-items: center;
+  //justify-content: space-around;
   .staff_pic{
-    display: inline-block;
-    width: 20%;
-    padding: 10px;
+    //display: inline-block;
+    //width: 20%;
+    //padding: 10px;
     .staff_caption{
       //font-size: 10pt;
       padding: 10px 0 0 0;
@@ -1506,6 +1506,13 @@ li.winery{
     }
 
   }
+
+  .col-sm-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
 }
 @media screen and (max-width: 460px) {
   .flexContainer {
@@ -1544,6 +1551,70 @@ li.winery{
 }
 
 @media screen and (max-width: 380px) {
+
+  .main.owm{
+    h2{
+      font-size: 24px;
+    }
+    h3{
+      font-size: 18px;
+    }
+    max-width: 1100px;
+    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_logo_xsm.svg"), url("assets/images/OWM_sky_small.svg");
+    .header.owm{
+      height: 50px;
+      .flexContainer{
+        justify-content: center;
+        .inlineElements{
+          display: flex;
+          justify-content: center;
+          align-self: center;
+
+          .inlineElement{
+            .header-conjunction{
+              display: none;
+            }
+            img.logo{
+              display: none;
+              margin: 10px 0;
+              padding: 15px 0;
+              height: 85px;
+            }
+          }
+        }
+        #banner_name{
+          margin-left:0;
+          align-self: center;
+          margin-top: 10px;
+          h1{
+            text-align: center;
+            font-size: 40px;
+          }
+        }
+      }
+    }
+  }
+  .main.swc{
+    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_swc_logo_small.svg"), url("assets/images/owm_sky_small.svg");
+    .header.swc{
+      height: 55px;
+    }
+  }
+
+  .main.swcandowm{
+    .header.swcandowm{
+      height: 55px;
+    }
+  }
+
+
+  .col-sm-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
   .left_image{
     display: none;
   }
@@ -1566,7 +1637,6 @@ li.winery{
       }
     }
 
-    //  max-width: 970px;
     background-color: $backgroundColor;
     min-height: 100vh;
     background-image: url("assets/images/owm_left_vines_narrow_isolate.svg"), url("assets/images/owm_right_vines_narrow_isolate.svg");
@@ -1636,39 +1706,6 @@ li.winery{
      }
    }
  }
-
-  //.footer {
-  //  height: 90px;
-  //  .foot{
-  //    //display: inline;
-  //    position: relative;
-  //    padding-top: 0px;
-  //    font-size: 12px;
-  //    height: 75px;
-  //    display: flex;
-  //    align-items: center;
-  //    flex-direction: column;
-  //    justify-content: space-around;
-  //    .footer-info{
-  //      //display: none;
-  //    }
-  //    .footer-phone{
-  //      display: none;
-  //    }
-  //    .foot .alt-footer-info{
-  //      display: inline;
-  //      a{
-  //        color: $contrastBkg;
-  //        display: inline-block;
-  //      }
-  //    }
-  //    .footer-icons{
-  //      img{
-  //        height: 25px;
-  //      }
-  //    }
-  //  }
-  //}
   .content{
     padding-bottom: 55px;
   }
