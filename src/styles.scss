@@ -77,7 +77,7 @@ $navbar-dark-toggler-border-color:  rgba($lighterContrastBkg, .1) !default;
   margin: 0 auto;
   background-color: $backgroundColor;
   min-height: 100vh;
-  background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_new.svg"), url("assets/images/OWM_sky_swc.svg");
+  background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_new_minified.svg"), url("assets/images/OWM_sky_swc.svg");
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-position: 0 0, right top, 50% 0px, 0 0;
   background-size: 58%, 58%, 90%, 100%;
@@ -99,7 +99,7 @@ $navbar-dark-toggler-border-color:  rgba($lighterContrastBkg, .1) !default;
   margin: 0 auto;
   background-color: $backgroundColor;
   min-height: 100vh;
-  background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_both_logo.svg"), url("assets/images/OWM_sky.svg");
+  background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_both_logo_minified.svg"), url("assets/images/OWM_sky.svg");
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-position: 0 0, right top, 50% 0px, 0 0;
   background-size: 58%, 58%, 90%, 100%;
@@ -962,7 +962,7 @@ li.winery{
     }
   }
   .main.swcandowm{
-    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_both_logo.svg"), url("assets/images/OWM_sky.svg");
+    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_both_logo_minified.svg"), url("assets/images/OWM_sky.svg");
   }
 
 
@@ -1009,7 +1009,7 @@ li.winery{
   }
   .main.swc{
     max-width: 1100px;
-    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_new_med.svg"), url("assets/images/OWM_sky_swc.svg");
+    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_new_med_minified.svg"), url("assets/images/OWM_sky_swc.svg");
     .header.swc{
       height: 105px;
       .inlineElements{
@@ -1029,7 +1029,7 @@ li.winery{
     }
   }
   .main.swcandowm{
-    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_both_logo.svg"), url("assets/images/OWM_sky.svg");
+    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_both_logo_minified.svg"), url("assets/images/OWM_sky.svg");
   }
 }
 
@@ -1097,7 +1097,7 @@ li.winery{
 
   .main.swcandowm{
     max-width: 1100px;
-    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_both_logos.svg"), url("assets/images/OWM_sky.svg");
+    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_both_logos_minified.svg"), url("assets/images/OWM_sky.svg");
     .header.swcandowm{
       height: 135px;
       .flexContainer{
@@ -1134,7 +1134,7 @@ li.winery{
 
   //.main{
   //  max-width: 925px;
-  //  background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_new.svg"), url("assets/images/OWM_sky.svg");
+  //  background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_new_minified.svg"), url("assets/images/OWM_sky.svg");
   //}
   .navbar div.tag-line a{
     font-size: 11pt;
@@ -1480,7 +1480,7 @@ li.winery{
     //  max-width: 970px;
     background-color: $backgroundColor;
     min-height: 100vh;
-    background-image: url("assets/images/owm_left_vines_narrow_isolate.svg"), url("assets/images/owm_right_vines_narrow_isolate.svg"), url("assets/images/owm_mainbkg_isolate_sm_new.svg"), url("assets/images/OWM_sky_sm.svg");
+    background-image: url("assets/images/owm_left_vines_narrow_isolate.svg"), url("assets/images/owm_right_vines_narrow_isolate.svg"), url("assets/images/owm_mainbkg_isolate_sm_new_minified.svg"), url("assets/images/OWM_sky_sm.svg");
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     background-position: 0 0, right top, 50% 0px, 0 0;
     background-size: 55%, 55%, 90%, 100%;
