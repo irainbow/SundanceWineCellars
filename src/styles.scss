@@ -30,7 +30,7 @@
 
 $mainContrast: #9D1B36;
 $secondaryContrast: #4F6133;
-$secondaryContrastDarker: #2d341f;
+$secondaryContrastDarker: #364021;
 $greenContrast: #e3da9f;
 $greenContrast2: #bbbb4e;
 $backgroundColor: #D3D1B2;
@@ -171,7 +171,7 @@ div.shop{
 
 body{
   background-color: transparent;
-  color: $secondaryContrast;
+  color: $secondaryContrastDarker;
 }
 
 a{
@@ -200,12 +200,14 @@ a:hover, a:focus {
 
 h1{
   font-family: 'Norican', cursive;
+  color: $secondaryContrast;
 }
 
 h2, h3, h4{
   font-family: 'Alegreya Sans', sans-serif;
   font-weight: 800;
   text-align: center;
+  color: $secondaryContrast;
 }
 h2{
   //font-family: 'Norican', cursive;
@@ -1749,3 +1751,28 @@ li.winery{
 //    float: left;
 //  }
 //}
+
+
+//Cetner odd items fix
+
+.row-centered {
+  text-align: center;
+  [class*="col-"] {
+      display: inline-block !important;
+      float: none !important;
+      margin-right: -4px;
+      vertical-align: top;
+    }
+  }
+
+
+.show {
+  background-color: #f0f0f0;
+  height: 3em;
+  border: 1px solid #ddd;
+  margin-top: 1em;
+}
+
+.row {
+  padding: 1em 0;
+}
