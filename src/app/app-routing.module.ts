@@ -12,11 +12,11 @@ import {ContactComponent} from './contact/contact.component';
 const swc_routes: Routes = [
   {
     path: '',
-    component: SundanceWineCellarsComponent,
+    component: OwmComponent,
     pathMatch: 'full',
     data: {
-      header: 'swc',
-      title: 'Sundance Wine Cellars'
+      header: 'owm',
+      title: 'Oregon Wine Merchants'
     } as RouteData
   },
   {
@@ -41,7 +41,11 @@ const swc_routes: Routes = [
   },
   {
     path: 'sundance_wine_cellars',
-    component: SundanceWineCellarsComponent
+    component: SundanceWineCellarsComponent,
+    data: {
+      header: 'swc',
+      title: 'Sundance Wine Cellars'
+    } as RouteData
   },
   {
     path: 'contact',
