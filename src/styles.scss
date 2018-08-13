@@ -156,6 +156,7 @@ hr.glyph:after {
 }
 .header_paragraph{
   font-weight: bold;
+  color: $secondaryContrast;
   text-align: center;
 }
 .sub-paragraph{
@@ -962,7 +963,7 @@ li.winery{
     }
   }
   .main.swcandowm{
-    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_both_logo_minified.svg"), url("assets/images/OWM_sky.svg");
+    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_both_logo.png"), url("assets/images/OWM_sky.svg");
   }
 
 
@@ -1009,7 +1010,7 @@ li.winery{
   }
   .main.swc{
     max-width: 1100px;
-    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_new_med_minified.svg"), url("assets/images/OWM_sky_swc.svg");
+    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_new_med_minified.png"), url("assets/images/OWM_sky_swc.svg");
     .header.swc{
       height: 105px;
       .inlineElements{
@@ -1222,7 +1223,7 @@ li.winery{
       font-size: 18px;
     }
     max-width: 1100px;
-    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs.svg"), url("assets/images/OWM_sky.svg");
+    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs.png"), url("assets/images/OWM_sky.svg");
     .header.owm{
       height: 105px;
       .flexContainer{
@@ -1258,7 +1259,7 @@ li.winery{
   }
   .main.swc{
     max-width: 1100px;
-    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_new_medsm.svg"), url("assets/images/owm_sky_med.svg");
+    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_new_medsm.png"), url("assets/images/owm_sky_med.svg");
     .header.swc{
       height: 88px;
       .inlineElements{
@@ -1280,7 +1281,7 @@ li.winery{
 
   .main.swcandowm{
     max-width: 1100px;
-    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_both_logos_small.svg"), url("assets/images/owm_sky_small.svg");
+    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_both_logos_small.png"), url("assets/images/owm_sky_small.svg");
     .header.swcandowm{
       height: 125px;
       .flexContainer{
@@ -1394,7 +1395,7 @@ li.winery{
 
 @media screen and (max-width: 683px) {
   .main.owm {
-    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_logo.svg"), url("assets/images/OWM_sky.svg");
+    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_logo.png"), url("assets/images/OWM_sky.svg");
     .header.owm {
       height: 85px;
       .flexContainer #banner_name h1 {
@@ -1405,7 +1406,7 @@ li.winery{
   }
 
   .main.swc{
-    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_swc_logo_small.svg"), url("assets/images/owm_sky_small.svg");
+    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_swc_logo_small.png"), url("assets/images/owm_sky_small.svg");
     .header.swc{
       height: 100px;
     }
@@ -1464,7 +1465,7 @@ li.winery{
     }
   }
   .main.swc{
-    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_swc_logo_small.svg"), url("assets/images/owm_sky_small.svg");
+    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_swc_logo_small.png"), url("assets/images/owm_sky_small.svg");
     .header.swc{
       height: 90px;
     }
@@ -1480,7 +1481,7 @@ li.winery{
     //  max-width: 970px;
     background-color: $backgroundColor;
     min-height: 100vh;
-    background-image: url("assets/images/owm_left_vines_narrow_isolate.svg"), url("assets/images/owm_right_vines_narrow_isolate.svg"), url("assets/images/owm_mainbkg_isolate_sm_new_minified.svg"), url("assets/images/OWM_sky_sm.svg");
+    background-image: url("assets/images/owm_left_vines_narrow_isolate.svg"), url("assets/images/owm_right_vines_narrow_isolate.svg"), url("assets/images/owm_mainbkg_isolate_sm_new.png"), url("assets/images/OWM_sky_sm.svg");
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     background-position: 0 0, right top, 50% 0px, 0 0;
     background-size: 55%, 55%, 90%, 100%;
@@ -1542,7 +1543,7 @@ li.winery{
     //  max-width: 970px;
     background-color: $backgroundColor;
     min-height: 100vh;
-    background-image: url("assets/images/owm_left_vines_narrow_isolate.svg"), url("assets/images/owm_right_vines_narrow_isolate.svg"), url("assets/images/owm_mainbkg_isolate_sm_new.svg"), url("assets/images/OWM_sky_sm.svg");
+    background-image: url("assets/images/owm_left_vines_narrow_isolate.svg"), url("assets/images/owm_right_vines_narrow_isolate.svg"), url("assets/images/owm_mainbkg_isolate_sm_new.png"), url("assets/images/OWM_sky_sm.svg");
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     background-position: 0 0, right top, 50% 0px, 0 0;
     background-size: 55%, 55%, 90%, 100%;
@@ -1562,7 +1563,7 @@ li.winery{
       font-size: 18px;
     }
     max-width: 1100px;
-    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_logo_xsm.svg"), url("assets/images/OWM_sky_small.svg");
+    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_logo_xsm.png"), url("assets/images/OWM_sky_small.svg");
     .header.owm{
       height: 50px;
       .flexContainer{
@@ -1597,7 +1598,7 @@ li.winery{
     }
   }
   .main.swc{
-    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_swc_logo_small.svg"), url("assets/images/owm_sky_small.svg");
+    background-image: url("assets/images/owm_left_vines_wide_isolate.svg"), url("assets/images/owm_right_vines_isolate.svg"), url("assets/images/owm_mainbkg_isolate_smtrs_swc_logo_small.png"), url("assets/images/owm_sky_small.svg");
     .header.swc{
       height: 55px;
     }
@@ -1712,67 +1713,4 @@ li.winery{
     padding-bottom: 55px;
   }
 
-}
-
-////Fix for five columns
-//
-//.col-xs-5ths,
-//.col-sm-5ths,
-//.col-md-5ths,
-//.col-lg-5ths {
-//  position: relative;
-//  min-height: 1px;
-//  padding-right: 15px;
-//  padding-left: 15px;
-//}
-//
-//.col-xs-5ths {
-//  width: 20%;
-//  float: left;
-//}
-//
-//@media (min-width: 768px) {
-//  .col-sm-5ths {
-//    width: 20%;
-//    float: left;
-//  }
-//}
-//
-//@media (min-width: 992px) {
-//  .col-md-5ths {
-//    width: 20%;
-//    float: left;
-//  }
-//}
-//
-//@media (min-width: 1200px) {
-//  .col-lg-5ths {
-//    width: 20%;
-//    float: left;
-//  }
-//}
-
-
-//Cetner odd items fix
-
-.row-centered {
-  text-align: center;
-  [class*="col-"] {
-      display: inline-block !important;
-      float: none !important;
-      margin-right: -4px;
-      vertical-align: top;
-    }
-  }
-
-
-.show {
-  background-color: #f0f0f0;
-  height: 3em;
-  border: 1px solid #ddd;
-  margin-top: 1em;
-}
-
-.row {
-  padding: 1em 0;
 }
