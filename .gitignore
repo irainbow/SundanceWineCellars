@@ -8,6 +8,8 @@
 
 # dependencies
 /node_modules
+package-lock.json
+.angulardock.json
 
 # IDEs and editors
 /.idea
@@ -17,6 +19,7 @@
 *.launch
 .settings/
 *.sublime-workspace
+.vscode/settings.json
 
 # IDE - VSCode
 .vscode/*
