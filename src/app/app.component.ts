@@ -23,13 +23,16 @@ export class AppComponent {
     return this.routeData.header === 'owm';
   }
 
-
   get isSwcHeader() {
     return this.routeData.header === 'swc';
   }
 
   get isSwcAndOwmHeader() {
     return this.routeData.header === 'swcandowm';
+  }
+
+  get showShippingCallout() {
+    return this.routeData.showShippingCallout;
   }
 
   constructor(

@@ -36,7 +36,8 @@ const swc_routes: Routes = [
     component: ShippingComponent,
     data: {
       header: 'owm',
-      title: 'Oregon Wine Merchants: Shipping'
+      title: 'Oregon Wine Merchants: Shipping',
+      showShippingCallout: false
     } as RouteData
   },
   {
@@ -93,11 +94,13 @@ export class AppRoutingModule {
 export interface RouteData {
   header: 'owm' | 'swc' | 'swcandowm';
   title: string;
+  showShippingCallout: boolean;
 }
 
 export const defaultRouteData: RouteData = {
   header: 'swc',
-  title: 'Sundance Wine Cellars'
+  title: 'Sundance Wine Cellars',
+  showShippingCallout: true
 };
 
 export function isRouteData(data: any): data is RouteData {

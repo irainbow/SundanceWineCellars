@@ -31,7 +31,7 @@
               <a class="nav-link" [routerLinkActive]="['active']" routerLink="/contact">Contact</a>
             </li>
           </ul>
-          <div class="tag-line form-inline my-2 my-lg-0">
+          <div class="tag-line form-inline my-2 my-lg-0" *ngIf="showShippingCallout">
             <a class="mr-sm-2" routerLink="/shipping">
               We Ship Wines - Click here!
             </a>
