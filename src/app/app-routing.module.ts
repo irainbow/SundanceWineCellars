@@ -5,6 +5,7 @@ import {ShippingComponent} from './shipping/shipping.component';
 import {SundanceWineCellarsComponent} from './sundance-wine-cellars/sundance-wine-cellars.component';
 import {OwmComponent} from './owm/owm.component';
 import {ContactComponent} from './contact/contact.component';
+import {GavinInMemoriamComponent} from './gavin-in-memoriam/gavin-in-memoriam.component';
 // import {HeaderOwmComponent} from './header-owm/header-owm.component';
 // import {HeaderSwcComponent} from './header-swc/header-swc.component';
 
@@ -54,6 +55,16 @@ const swc_routes: Routes = [
     data: {
       header: 'swcandowm',
       title: 'Sundance Wine Cellars: Contact'
+    } as RouteData
+  },
+  {
+    path: 'gavin-in-memoriam',
+    component: GavinInMemoriamComponent,
+    // redirectTo: '/home', // <--- ADD THIS TEMPORARILY
+    data: {
+      header: 'swc',
+      title: 'Gavin in Memoriam',
+      showShippingCallout: false
     } as RouteData
   },
   // {
