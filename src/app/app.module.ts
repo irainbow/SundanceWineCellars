@@ -13,7 +13,7 @@ import { SundanceWineCellarsComponent } from './sundance-wine-cellars/sundance-w
 import { ContactComponent } from './contact/contact.component';
 import { HeaderOwmComponent } from './header-owm/header-owm.component';
 import { HeaderSwcComponent } from './header-swc/header-swc.component';
-
+import { GavinInMemoriamComponent } from './gavin-in-memoriam/gavin-in-memoriam.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,8 @@ import { HeaderSwcComponent } from './header-swc/header-swc.component';
     SundanceWineCellarsComponent,
     ContactComponent,
     HeaderOwmComponent,
-    HeaderSwcComponent
+    HeaderSwcComponent,
+    GavinInMemoriamComponent
   ],
   imports: [
     NgbModule.forRoot(),
